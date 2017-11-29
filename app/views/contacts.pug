@@ -1,0 +1,30 @@
+extends base/_layout.pug
+block variables
+
+block styles
+
+block scripts
+	script.
+		function initMap() {
+			var uluru = {lat:54.98796881, lng: 82.91297615};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 16,
+				center: uluru
+			});
+			var marker = new google.maps.Marker({
+				position: uluru,
+				map: map
+			});
+		}
+	script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAPgB0p5AGcGFZstWDj9XnlAB_epionHSo&callback=initMap',async,defer)
+block header
+	include partials/_header.pug
+block content
+	include partials/_page-heading.pug
+	include partials/_page-contacts.pug
+block footer
+	include partials/_footer.pug
+block modal
+	include partials/_modal.pug
+
+

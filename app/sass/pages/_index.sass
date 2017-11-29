@@ -1,0 +1,582 @@
+section
+  overflow: hidden
+
+.intro
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 580px
+  +rx(1024)
+    height: 500px
+  +background('../img/index/intro.jpg')
+.intro-content
+
+  &__heading
+    margin: 0px auto 0px
+    +font($font,45px,400,$black)
+    letter-spacing: 1px
+    text-align: center
+    line-height: 68px
+    width: 95%
+    max-width: 980px
+    text-transform: uppercase
+    +rx(1024)
+      font-size: 38px
+      line-height: 50px
+      +rx(768)
+        font-size: 30px
+        line-height: 40px
+      +rx(500)
+        font-size: 24px
+        line-height: 32px
+  &__text
+    padding-right: 3px
+    margin: 6px auto 0px
+    +font($font,26px,400,$black)
+    text-align: center
+    line-height: 39px
+    width: 95%
+    max-width: 920px
+    text-transform: uppercase
+    +rx(1024)
+      font-size: 22px
+      line-height: 35px
+      +rx(768)
+        font-size: 18px
+        line-height: 27px
+        +rx(500)
+          font-size: 16px
+          line-height: 25px
+
+.services
+  padding: 80px 0px 85px
+  +rx(1000)
+    padding: 60px 0px 65px
+    +rx(700)
+      padding: 40px 0px 25px
+
+.section-heading
+  margin: 0px auto 85px
+  +r(1000)
+    &--section-adventages
+      margin-bottom: 80px
+    &--section-blog
+      margin-bottom: 57px
+    &--section-callback
+      margin-bottom: 56px
+    &--section-payment
+      margin-bottom: 57px
+    &--section-clients
+      margin-bottom: 53px
+  +rx(1000)
+    margin-bottom: 50px
+    +rx(750)
+      margin-bottom: 40px
+      font-size: 26px
+  +font($font,30px,400,$black)
+  text-transform: uppercase
+  line-height: 45px
+  text-align: center
+.services-item
+  width: 100%
+  display: flex
+  flex-direction: column
+  margin: 0px 0px 30px
+  &__heading
+    margin: 0px auto 25px
+    text-align: center
+    +font($font,20px,400,$black)
+    line-height: 30px
+    max-width: 215px
+    padding-bottom: 20px
+    border-bottom: 2px solid transparent
+    +rx(575)
+      padding-bottom: 0px
+      margin-bottom: 0px
+  &__logo
+    width: 100%
+    margin: 0px 0px 15px
+    text-align: center
+    svg
+      height: 80px
+      margin: 0px auto
+      width: 100%
+      +rx(575)
+        height: 110px
+        +rx(450)
+          height: 90px
+  &:hover
+    .services-item__heading
+      color: $hover
+      border-bottom: 2px solid $hover
+    .services-item__logo
+      svg
+        fill: $hover
+
+.section-link
+  +font($font,20px,400,$black)
+  display: block
+  line-height: 20px
+  padding: 13px 0px
+  text-align: center
+  border: 2px solid $hover
+  border-radius: 25px
+  margin: 0px auto
+  text-decoration: none
+  &:hover
+    text-decoration: none
+    color: $hover
+  &_section_blog
+    width: 270px
+
+.clients
+  padding: 98px 0px 0px
+  +rx(1024)
+    padding: 78px 0px 0px
+    +rx(768)
+      padding: 58px 0px 0px
+      +rx(500)
+        padding: 0px
+.clients-item
+  margin-bottom: 70px
+  &__img
+    width: 100%
+    max-width: 280px
+    margin: 0px auto
+    display: block
+    filter: grayscale(100%)
+    opacity: 0.7
+    +rx(575)
+      filter: grayscale(0%)
+      opacity: 1
+      border-color: $hover
+    &:hover
+      filter: grayscale(0%)
+      opacity: 1
+.adventages
+  position: relative
+  overflow: visible
+.wawe-adventages
+  position: absolute
+  width: 100%
+  bottom: -60px
+
+
+.adventages-top
+  margin-bottom: 50px
+.adventages-middle
+  margin-bottom: 40px
+.adventage-block
+  cursor: pointer
+  &__logo
+    width: 80px
+    height: 80px
+    border-radius: 50%
+    background-color: #999999
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0px auto 15px
+    img
+      height: 40px
+      transform: scale(1)
+      transition-property: transform
+      transition-duration: 500ms
+  &__heading
+    text-align: center
+    +font($font,20px,400,$black)
+    line-height: 30px
+    +rx(1024)
+      font-size: 17px
+  &__text-mobile
+    text-align: center
+    +font($font,20px,400,$black)
+    line-height: 30px
+    +display-none
+    +rx(500)
+      font-size: 18px
+      line-height: 26px
+  &:hover,&.adventage-block--active
+    .adventage-block__logo
+      background-color: $hover
+      img
+        transform: scale(1.2)
+.adventage-line
+  background-color: #999999
+  height: 1px
+  position: relative
+  &--last-child:before
+    height: 3px
+    content: ''
+    display: block
+    width: 100%
+    position: absolute
+    top: -1px
+    left: 0px
+    opacity: 0
+    left: 0px
+    transform: translateX(0%)
+    transition-property: transform
+    transition-duration: 500ms
+    background-color: $hover
+  &--left-1
+    &:before
+      transform: translateX(-300%)
+      transition-duration: 1000ms
+      opacity: 1
+  &--left-2
+    &:before
+      transform: translateX(-200%)
+
+      opacity: 1
+  &--left-3
+    &:before
+      transform: translateX(-100%)
+
+      opacity: 1
+  &--left-4
+    &:before
+      ltransform: translateX(0%)
+      opacity: 1
+  &:after
+    display: block
+    position: relative
+    content: ''
+    background-color: #999999
+    width: 9px
+    height: 9px
+    margin: 0px auto
+    top: -4px
+  &:first-of-type:after
+    position: absolute
+    left: 0px
+  &:last-of-type:after
+    position: absolute
+    right: 0px
+  &--active
+    //height: 3px
+    //background-color: $hover
+    //padding: 0px
+    //top: -1px
+    &:after
+      background-color: $hover
+      //top: -3px
+.adventage-item
+  text-align: center
+  +font($font,20px,400,$black)
+  line-height: 30px
+  +display-none
+  &--active
+    +display
+    width: 100%
+    height: auto
+.adventage-list
+  min-height: 150px
+.adventages-wrapper
+ &--mobile
+   .adventages-middle
+     +display-none
+   .adventages-bottom
+     +display-none
+   .adventages-top
+     flex-direction: column
+     .col-6
+       max-width: 100%
+       flex: 1 0 auto
+       margin-bottom: 50px
+       +rx(500)
+        margin-bottom: 30px
+       .adventage-block
+        &__heading
+          font-size: 30px
+          margin-bottom: 15px
+          +rx(500)
+            font-size: 22px
+        &__text-mobile
+          +display
+          width: 100%
+          height: auto
+        &__logo
+          width: 120px
+          height: 120px
+          background-color: $hover
+          img
+            height: 60px
+.callback
+  padding: 80px 0px 0px
+  +rx(1000)
+    padding-top: 60px
+    +rx(750)
+      padding-top: 45px
+      +rx(500)
+        padding-top: 35px
+.callback-wrapper
+  padding: 150px 0px 100px
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  +rx(1000)
+    padding: 80px 0px
+    +rx(750)
+      padding: 65px 0px
+      +rx(500)
+        padding: 55px 0px
+.callback-form
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 0px 40px
+  max-width: 970px
+  margin: 4px auto 80px
+  +r(1300)
+    padding-right: 50px;
+  +rx(991)
+    padding: 0px
+    margin: 0px 0px 50px
+.callback-input,.callback-button
+  width: 45%
+  margin: 0px 0px 30px
+  padding: 11px 30px 8px
+  border-radius: 25px
+  line-height: 20px
+  height: 50px
+  box-sizing:
+  +font($font,20px,400,$black)
+  +rx(767)
+    width: 100%
+.callback-input
+  background-color: white
+  border: 1px solid #999999
+.callback-button
+  color: white!important
+  text-align: center
+  background-color: $hover
+  border: 1px solid transparent
+  cursor: pointer
+  outline: none
+  &:active
+    outline: none
+.callback-text
+  margin: 0px auto
+  max-width: 677px
+  line-height: 27px
+  +font($font,18px,400,white)
+  text-align: center
+.callback-link
+  line-height: 27px
+  +font($font,18px,400,white)
+  text-decoration: underline
+  &:hover
+    color: $hover
+    text-decoration: none
+.payment-item
+  margin-bottom: 40px
+  &__img
+    width: 100%
+    max-width: 280px
+    margin: 0px auto
+    display: block
+    filter: grayscale(100%)
+    opacity: 0.7
+    border: 2px solid #999999
+    border-radius: 42px
+    +rx(575)
+      filter: grayscale(0%)
+      opacity: 1
+      border-color: $hover
+    &:hover
+      filter: grayscale(0%)
+      opacity: 1
+      border-color: $hover
+.payment
+  padding: 80px 0px 50px
+.payment-list.swiper-container,.clients-list.swiper-container
+  max-width: 245px
+  margin: 0px auto 0px
+.payment-text
+  padding: 0px
+  margin: 10px 0px 0px
+  +font($font,20px,400,$black)
+  text-align: center
+.payment-list,.clients-list
+  .swiper-slide
+    max-width: 100%!important
+    flex: 0 0 100%
+    .payment-item
+      margin-bottom: 0px
+    .clients-item
+      margin-bottom: 0px
+.swiper-button-next,.swiper-button-prev
+  +display-none
+.arrow-default
+  width: 25px
+  height: 25px
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  opacity: 1
+  transition-duration: 500ms
+  transition-property: opacity
+  cursor: pointer
+  &--close
+    +display-none
+  &--left
+    background-image: url(../img/icons/svg/arrow-left.svg)
+  &--right
+    background-image: url(../img/icons/svg/arrow-right.svg)
+  &.swiper-button-disabled
+    opacity: 0
+.payment-wrapper
+  display: flex
+  align-items: center
+  &--margin
+    margin-bottom: 40px
+.clients-wrapper
+  display: flex
+  align-items: center
+  &--margin
+    margin-bottom: 40px
+@keyframes zoomIn
+  from
+    opacity: 0
+    transform: scale3d(.3, .3, .3)
+  50%
+    opacity: 1
+
+
+.review-item
+  user-select: none
+  cursor: pointer
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  transform: rotate(0deg)
+  transition-property: transform
+  transition-duration: 500ms
+  &__name
+    +font($font,20px,400,$hover)
+    text-align: center
+    line-height: 30px
+    margin: 0px 0px 10px
+    +rx(500)
+      font-size: 16px
+  &__position
+    +font($font,20px,400,$black)
+    text-align: center
+    line-height: 30px
+    margin: 0px 0px 20px
+    +rx(500)
+      font-size: 16px
+      line-height: 24px
+  &__text
+    +font($font,16px,400,#999999)
+    text-align: center
+    line-height: 24px
+    width: 95%;
+    margin: 0px auto;
+    +rx(500)
+      font-size: 14px
+      line-height: 21px
+      width: 100%
+  &__left-arrow
+    display: none
+    width: 15px
+    height: 9px
+    background-image: url(../img/icons/svg/review-arrow--left.svg)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    margin: 0px auto
+  &__right-arrow
+    display: none
+    width: 15px
+    height: 9px
+    background-image: url(../img/icons/svg/review-arrow--right.svg)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    margin: 0px auto
+  &:not(.swiper-slide-active)
+    .review-item__text
+      +r(1260)
+        display: none
+
+  &.swiper-slide-active
+    +r(1260)
+      animation-duration: 0.5s
+      animation-name: bounceIn
+
+.reviews
+  background-color: #f9f9f9
+  padding: 80px 0px 50px
+  position: relative
+  &-img
+    position: absolute
+    left: 50%
+    top: 10%
+  .container
+    +rx(600)
+      padding: 0px 5px
+
+.reviews-list
+
+  min-height: 450px
+  +rx(1260)
+    min-height: 300px
+    +rx(900)
+     min-height: 450px
+     +rx(500)
+        min-height: 350px
+  .swiper-wrapper
+    align-items: center
+  .swiper-slide-next
+    .review-item__right-arrow
+      +r(1260)
+        display: block
+  .swiper-slide-prev
+    .review-item__left-arrow
+      +r(1260)
+        display: block
+  .swiper-pagination-bullet
+    width: 9px
+    height: 9px
+    background-color: #999999
+    opacity: 1
+    border-radius: 0px
+    &-active
+      background-color: $hover
+.reviews-slider__wrapper
+  +rx(1260)
+    padding: 0px 22px
+    position: relative
+    .review-wrapper__left-arrow
+      position: absolute
+      z-index: 50
+      width: 15px
+      top: 48%
+      left: 0px
+      cursor: pointer
+      height: 9px
+      background-image: url(../img/icons/svg/review-arrow--left.svg)
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+      margin: 0px auto
+      &.swiper-button-disabled
+        +display-none
+    .review-wrapper__right-arrow
+      position: absolute
+      cursor: pointer
+      z-index: 50
+      top: 48%
+      right: 0px
+      width: 15px
+      height: 9px
+      background-image: url(../img/icons/svg/review-arrow--right.svg)
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+      margin: 0px auto
+      &.swiper-button-disabled
+        +display-none

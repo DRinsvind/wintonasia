@@ -1,0 +1,13 @@
+section.blog
+	.container
+		.section-heading.section-heading--section-blog!= content.index.blog.heading
+		.row.justify-content-center
+			each item, i in content.index.blog.items
+				.col-24.col-md-12.col-xl-8(class={"d-none d-xl-block" : i === 2})
+					.blog-item
+						.blog-item__logo(style='background-image:url('+ item.img +')')
+						.blog-item__content
+							h3.blog-item__heading!= item.heading
+							p.blog-item__text!= item.text
+							a.blog-item__read-more(href='#')
+		a.section-link.section-link_section_blog(href='/blog.html') Читать все новости

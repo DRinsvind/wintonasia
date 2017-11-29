@@ -1,0 +1,12 @@
+section.page-title
+	.container
+		.row.title-wrapper.align-items-center
+			.col-24.col-md-12
+				h2.title-headng!= page.title
+			.col-24.col-md-12
+				.social-wrapper.justify-content-md-end.justify-content-start
+					ul.social-list.align-self-end
+						each item, i in content.site.social
+							li.social-item
+								a.social-item__link(href=item.href)
+									+svg(item.name)

@@ -1,0 +1,139 @@
+.page-title
+  background-color: #f9f9f9
+.title-wrapper
+  padding: 75px 0px
+  +rx(1024)
+    padding: 60px 0px
+    +rx(767)
+      padding: 50px 0px
+@keyframes titleHeading
+  from
+    width: 0px
+  to
+    width: 180px
+
+h2.title-headng
+  text-transform: uppercase
+  +font($font,30px,700,$black)
+  position: relative
+  +rx(767)
+    margin-bottom: 25px
+    font-size: 25px
+  &:after
+    content: ''
+    position: absolute
+    left: 0px
+    height: 4px
+    background-color: $hover
+    bottom: -7px
+    width: 180px
+    animation-name: titleHeading
+    animation-duration: 1500ms
+.social-wrapper
+  display: flex
+.social-list
+  list-style: none
+  margin: 0px
+  padding: 0px
+  display: flex
+.social-item
+  &:not(:last-of-type)
+    margin-right: 20px
+  &__link
+    color: $hover
+    text-decoration: none
+    svg
+      width: 50px
+      height: 50px
+    &:hover
+      color: lighten($hover,10%)
+.map
+  min-width: 60%
+  min-height: 517px
+  +rx(1259)
+    min-width: 550px
+    min-height: 400px
+    +rx(991)
+      width: 100%
+      min-width: 0px
+      height: 300px
+      margin-bottom: 40px
+      +rx(767)
+        height: 200px
+
+  margin-right: 60px
+.select
+  height: 60px
+  background-color: #e7e7e7
+  border-radius: 30px
+  width: 100%
+.nice-select
+  +font($font,16px,700,$black)
+  text-transform: uppercase
+  height: auto
+  line-height: 16px
+  padding: 22px 0px 20px 30px
+  background-color: #e7e7e7
+  border-radius: 30px
+  width: 100%
+  border: none
+  &:after
+    width: 15px
+    height: 15px
+    right: 30px
+    top: 25px
+  .list
+    left: 30px
+    width: calc(100% - 60px)
+
+.contacts-wrapper
+  display: flex
+  padding: 90px 0px
+  overflow: hidden
+  +rx(991)
+    flex-direction: column
+    padding: 60px 0px
+    +rx(600)
+      padding: 40px 0px
+.contacts-block
+  *
+    max-width: 100%
+.contacts-list
+  list-style: none
+  padding: 0px
+  margin: 125px 0px 0px
+.contacts-item
+  display: flex
+  align-items: center
+  margin-bottom: 40px
+  &__logo
+    margin-right: 20px
+  &__first-svg
+    min-width: 30px
+    min-height: 37px
+    color: #9f9f9f
+  &__sec-svg
+    width: 30px
+    height: 23px
+    color: #9f9f9f
+  &__third-svg
+    width: 30px
+    height: 30px
+    color: #9f9f9f
+  &__content
+    +font($font,20px,400,$black)
+    line-height: 30px
+    +rx(991)
+      display: flex
+      +rx(600)
+        display: block
+  &__link
+    text-decoration: none
+    display: block
+    +font($font,20px,400,$black)
+    +rx(991)
+      &:nth-child(1)
+        margin-right: 25px
+    &:hover
+      text-decoration: none
+      color: $black

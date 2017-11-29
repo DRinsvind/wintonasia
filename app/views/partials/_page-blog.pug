@@ -1,0 +1,12 @@
+section.blog.blog--page-blog
+	.container
+		.row.justify-content-center
+			each item, i in page.items
+				.col-24.col-lg-12
+					.blog-item.blog-item--page-blog
+						.blog-item__logo(style='background-image:url(' + item.img + ')')
+						.blog-item__content
+							h3.blog-item__heading!= item.heading
+							p.blog-item__text!= item.text
+							a.blog-item__read-more(href='#')
+		a.section-link.section-link_section_blog(href='#') Загрузить еще

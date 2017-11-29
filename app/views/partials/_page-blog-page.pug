@@ -1,0 +1,15 @@
+section.single-blog
+	.container
+		.row
+			.col-24
+				h3.single-blog__heading!= page.heading
+				a.single-blog__link(href='#')!= page.url
+				div.single-blog__text.clearfix
+					img.single-blog__img(src='./img/b2.png')
+					!= page.text
+		.row.more-blogs
+			each item, i in page.more
+				.col-12
+					.more-item(class={".more-item--left" : i === 0},class={".more-item--right" : i === 1},style='background-image:url('+item.img+')')
+						a.more-item__link(href=item.href)!= item.link
+						h4.more-item__heading!= item.heading

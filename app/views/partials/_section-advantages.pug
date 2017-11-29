@@ -1,0 +1,22 @@
+section.adventages
+	img.wawe-adventages(src='./img/icons/svg/wave.svg')
+	.container
+		h2.section-heading.section-heading--section-adventages!= content.index.advantages.heading
+		.adventages-wrapper
+			.row.adventages-top
+				each item, i in content.index.advantages.items
+					.col-6
+						.adventage-block(class={"adventage-block--active" : i === 0},data-id=(i+1),id='adventage-block--'+(i+1))
+							.adventage-block__logo
+								img(src='./img/icons/svg/a'+(i+1)+'.svg', class='.adventage-block__img')
+							h4.adventage-block__heading!= item.heading
+							p.adventage-block__text-mobile!= item.text
+			.row.adventages-middle
+				each item, i in content.index.advantages.items
+					.col-6.adventage-line(class={"adventage-line--active" : i === 0},class={"adventage-line--last-child adventage-line--left-1" : i === 3},data-id=(i+1),id='adventage-line--'+(i+1))
+			.row.adventages-bottom.justify-content-center
+				.col-24.col-lg-16
+					.adventage-list
+						each item, i in content.index.advantages.items
+							.adventage-item(class={"adventage-item--active" : i === 0},id='adventage-item--'+(i+1))
+								p.adventage-item__text!= item.text

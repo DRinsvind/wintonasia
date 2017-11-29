@@ -1,0 +1,12 @@
+section.payment
+	.container
+		h2.section-heading.section-heading--section-payment!= content.index.payment.heading
+		.payment-wrapper
+			.arrow-default.arrow-default--left.arrow-default--close.arrow-default--disabled
+			.row.justify-content-center.payment-list
+				each item, i in content.index.payment.items
+					.col-lg-6.col-md-8.col-sm-12.col-24
+						.payment-item
+							img(class="payment-item__img",src=item.img)
+			.arrow-default.arrow-default--right.arrow-default--close
+		p.payment-text!= content.index.payment.text

@@ -1,0 +1,158 @@
+header
+  .container
+    +rx(500)
+      padding: 0px 10px
+.header-block
+    padding: 42px 0px
+    +rx(768)
+      padding: 20px 0px 20px 20px
+      +rx(500)
+        padding: 10px 0px 10px 10px
+.logo
+  +r(1300)
+    margin-left: 26px
+
+  +rx(768)
+    width: 150px
+    +rx(768)
+      width: 120px
+    +rx(500)
+      width: 100px
+      margin-left: 5px
+  img
+    width: 100%
+.header-content
+  display: flex
+  align-items: center
+  +r(1300)
+    padding-right: 40px
+  +rx(1024)
+    flex-direction: row-reverse
+
+.nav-list
+  display: flex
+  list-style: none
+  padding: 0px
+  margin: 0px
+  +rx(1024)
+    display: none
+  &__child
+    margin-right: 34px
+    &:nth-child(1)
+      margin-right: 30px
+    &:nth-child(2)
+      margin-right: 27px
+    &:nth-child(3)
+      margin-right: 28px
+    &:nth-child(4)
+      margin-right: 30px
+  &__link
+    display: block
+    +font($font, 18px, 400, $black)
+    text-decoration: none
+    &:hover
+      text-decoration: none
+      color: $hover
+.languale-nav
+  display: flex
+  +r(1300)
+    margin-right: -5px
+  +rx(1024)
+    margin-right: 25px
+    +rx(500)
+      margin-right: 15px
+.language-item
+
+  +rx(1024)
+    display: block
+  padding: 11px 18px 8px 18px
+  +rx(500)
+    padding: 6px 13px 3px 13px
+  border-radius: 20px
+  border: 2px solid #f9f9f9
+  text-transform: uppercase
+  +font($font, 18px, 400, #999999)
+  line-height: 18px
+  text-decoration: none
+  &:hover
+    text-decoration: none
+    color: $hover!important
+  &.language-item--active
+    border-color: #dc853d
+    color: $black
+  &:first-of-type
+    margin-right: 10px
+
+#hamburger
+  -webkit-transform: rotate(0deg)
+  -moz-transform: rotate(0deg)
+  -o-transform: rotate(0deg)
+  transform: rotate(0deg)
+  -webkit-transition: .5s ease-in-out
+  -moz-transition: .5s ease-in-out
+  -o-transition: .5s ease-in-out
+  transition: .5s ease-in-out
+  cursor: pointer
+
+  +display-none
+  +rx(1024)
+    +display
+    position: relative
+    margin: 0px 20px 0px 0px
+    width: 30px
+    height: 22.5px
+    +rx(500)
+      margin: 15px
+  span
+    display: block
+    position: absolute
+    height: 4px
+    width: 100%
+    background: #dc853d
+    border-radius: 9px
+    opacity: 1
+    left: 0
+    -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+    -webkit-transition: .25s ease-in-out
+    -moz-transition: .25s ease-in-out
+    -o-transition: .25s ease-in-out
+    transition: .25s ease-in-out
+    &:nth-child(1)
+      top: 0px
+      -webkit-transform-origin: left center
+      -moz-transform-origin: left center
+      -o-transform-origin: left center
+      transform-origin: left center
+    &:nth-child(2)
+      top: 9px
+      -webkit-transform-origin: left center
+      -moz-transform-origin: left center
+      -o-transform-origin: left center
+      transform-origin: left center
+    &:nth-child(3)
+      top: 18px
+      -webkit-transform-origin: left center
+      -moz-transform-origin: left center
+      -o-transform-origin: left center
+      transform-origin: left center
+  &.open span
+    &:nth-child(1)
+      -webkit-transform: rotate(45deg)
+      -moz-transform: rotate(45deg)
+      -o-transform: rotate(45deg)
+      transform: rotate(45deg)
+      top: -1.5px
+      left: 4px
+    &:nth-child(2)
+      width: 0%
+      opacity: 0
+    &:nth-child(3)
+      -webkit-transform: rotate(-45deg)
+      -moz-transform: rotate(-45deg)
+      -o-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+      top: 19.5px
+      left: 4px

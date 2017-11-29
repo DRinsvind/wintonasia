@@ -1,0 +1,11 @@
+section.clients
+    .container
+        h2.section-heading.section-heading--section-clients!= content.index.clients.heading
+        .clients-wrapper
+            .arrow-default.arrow-default--left.arrow-default--close.arrow-default--disabled
+            .row.justify-content-center.clients-list
+                each item, i in content.index.clients.items
+                    .col-lg-6.col-md-8.col-sm-12.col-24
+                        .clients-item
+                            img(class="clients-item__img",src=item.img)
+            .arrow-default.arrow-default--right.arrow-default--close

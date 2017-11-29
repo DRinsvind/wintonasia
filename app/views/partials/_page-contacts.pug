@@ -1,0 +1,27 @@
+section.contacts
+	.container
+		.contacts-wrapper
+			.map(id='map')
+			.contacts-block
+				select
+					option(value="1") Новосибирск
+					option(value="2") Новосибирск
+					option(value="3") Новосибирск
+					option(value="4") Новосибирск
+				ul.contacts-list
+					li.contacts-item
+						.contacts-item__logo
+							+svg('placeholder')(class='contacts-item__first-svg')
+						.contacts-item__content Новосибирск, ул.Немировича-Данченко, дом 165, оф.715 (станция метро «Студенческая»)
+					li.contacts-item
+						.contacts-item__logo
+							+svg('email')(class='contacts-item__sec-svg')
+						.contacts-item__content
+							a.contacts-item__link(href='mailto:nsk@wintonasia.com') nsk@wintonasia.com
+							a.contacts-item__link(href='mailto:amp@wintonasia.com') amp@wintonasia.com
+					li.contacts-item
+						.contacts-item__logo
+							+svg('phone')(class='contacts-item__third-svg')
+						.contacts-item__content
+							a.contacts-item__link(href='tel:73833807964') +7 (383) 380 79 64
+							a.contacts-item__link(href='tel:79537848200') +7 (953) 784 82 00

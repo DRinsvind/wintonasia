@@ -1,0 +1,49 @@
+footer
+	.footer-top
+		.container
+			.row.justify-content-center
+				.col-24.col-sm-8.col-md-24.col-xl-14.footer-nav
+					.footer-menu
+						h4.footer-top-heading Контакты
+						.footer-nav-wrapper
+							ul.footer-nav-list
+								li.footer-nav-item
+									a.footer-nav-item__link(href='tel:861850212909') +86-185 0212 909
+								li.footer-nav-item 08:00-20:00
+							.footer-qr
+								img(src='./img/qr.jpg')
+					.footer-menu
+						h4.footer-top-heading информация
+						ul.footer-nav-list
+							each item, i in content.site.nav.links
+								li.footer-nav-item
+									a.footer-nav-item__link(href=item.href)!= item.displayName
+					.footer-menu.footer-menu--big
+						h4.footer-top-heading услуги
+						ul.footer-nav-list
+							each item, i in content.site.nav.adventures
+								li.footer-nav-item
+									a.footer-nav-item__link(href=item.href)!= item.heading
+				.col-24.col-sm-16.col-md-24.col-xl-10
+					.footer-form-wrapper
+						h4.footer-top-heading обратная связь
+						form.footer-form
+						input.footer-input(type='text',placeholder='Имя')
+						.form-group.form-group--footer
+							input.footer-input(type='email',placeholder='E-mail')
+							button.footer-button
+	.footer-bottom
+		.container
+			.row.justify-content-between.align-items-stretch
+				.col-24.col-md-12.footer-bottom-social.justify-content-md-start.align-items-md-start.align-items-center.justify-content-center
+					h4.footer-bottom-heading Подписывайтесь
+					ul.footer-social-list
+						each item, i in content.site.footer.social
+							li.footer-social-item
+								a.footer-social-item__link(href='#')
+									+svg(item.name)
+				.col-24.col-md-12.footer-bottom-contacts.justify-content-md-between.align-items-md-end.align-items-center.justify-content-center
+					a.footer-bottom-logo(href='#')
+						img(src='./img/logo/kvk-logo.png')
+					p.footer-bottom-information.text-center.text-md-right!= content.site.footer.information
+

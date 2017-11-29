@@ -1,0 +1,10 @@
+section.services
+	.container
+		h2.section-heading!= content.index.services.heading
+		.services-list.row.justify-content-center
+			each item, i in content.index.services.items
+				.col-lg-6.col-md-8.col-sm-12.col-24
+					.services-item
+						.services-item__logo
+							+svg('s'+ (i + 1))
+						h4.services-item__heading!= item.text

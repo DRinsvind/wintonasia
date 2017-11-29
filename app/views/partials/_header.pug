@@ -1,0 +1,18 @@
+header(class=page.header)
+  .container
+    .row.justify-content-between.header-block.align-items-center
+      .logo
+         img(src='img/logo/logo.png')
+      .header-content
+         .header-nav
+           div(id="hamburger")
+             span
+             span
+             span
+           ul.nav-list
+             each item, i in content.site.nav.links
+               li.nav-list__child
+                 a.nav-list__link(href=item.href)!= item.displayName
+         .languale-nav
+           each item, i in content.site.lang
+             a.language-item(href=item.link,class={'language-item--active':item.active===true})!= item.name

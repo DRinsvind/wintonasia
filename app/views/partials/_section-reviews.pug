@@ -1,0 +1,21 @@
+section.reviews
+	.container
+		h2.section-heading отзывы клиентов
+		.reviews-slider__wrapper
+			.review-wrapper__left-arrow
+			.review-wrapper__right-arrow
+			.row.justify-content-center.swiper-container.reviews-list
+				.swiper-wrapper
+					each item, i in content.index.reviews.items
+						.review-item.swiper-slide
+							h4.review-item__name!=item.name
+							h4.review-item__position!=item.position
+							.review-item__content
+								p.review-item__text!=item.text
+							.review-item__left-arrow
+							.review-item__right-arrow
+				.swiper-pagination
+				.swiper-button-prev
+				.swiper-button-next
+	img.reviews-img(src='./img/index/map.png')
+
