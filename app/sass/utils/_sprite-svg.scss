@@ -52,6 +52,24 @@ $svg-arrow-right-offset-y: px;
 $svg-arrow-right-image: "../img/sprite.svg";
 $svg-arrow-right: ( "arrow-right", em(17.39), em(32), px, px, "../img/sprite.svg" );
 
+// blog-next
+$svg-blog-next-name: "blog-next";
+$svg-blog-next-width: em(16);
+$svg-blog-next-height: em(10);
+$svg-blog-next-offset-x: px;
+$svg-blog-next-offset-y: px;
+$svg-blog-next-image: "../img/sprite.svg";
+$svg-blog-next: ( "blog-next", em(16), em(10), px, px, "../img/sprite.svg" );
+
+// blog-prev
+$svg-blog-prev-name: "blog-prev";
+$svg-blog-prev-width: em(16);
+$svg-blog-prev-height: em(10);
+$svg-blog-prev-offset-x: px;
+$svg-blog-prev-offset-y: px;
+$svg-blog-prev-image: "../img/sprite.svg";
+$svg-blog-prev: ( "blog-prev", em(16), em(10), px, px, "../img/sprite.svg" );
+
 // button
 $svg-button-name: "button";
 $svg-button-width: em(30);
@@ -272,4 +290,4 @@ $svg-wave: ( "wave", em(32), em(11.13), px, px, "../img/sprite.svg" );
 $svg-spritesheet-width: px;
 $svg-spritesheet-height: px;
 $svg-spritesheet-image: "../img/sprite.svg";
-$svg-spritesheet-sprites: ( $svg-a1,  $svg-a2,  $svg-a3,  $svg-a4,  $svg-arrow-left,  $svg-arrow-right,  $svg-button,  $svg-email,  $svg-facebook,  $svg-facebook2,  $svg-linkedin,  $svg-linkedin2,  $svg-phone,  $svg-placeholder,  $svg-pointer,  $svg-review-arrow--left,  $svg-review-arrow--right,  $svg-s1,  $svg-s2,  $svg-s3,  $svg-s4,  $svg-s5,  $svg-s6,  $svg-s7,  $svg-s8,  $svg-twitter,  $svg-twitter2,  $svg-vk,  $svg-vk2,  $svg-wave,  );
+$svg-spritesheet-sprites: ( $svg-a1,  $svg-a2,  $svg-a3,  $svg-a4,  $svg-arrow-left,  $svg-arrow-right,  $svg-blog-next,  $svg-blog-prev,  $svg-button,  $svg-email,  $svg-facebook,  $svg-facebook2,  $svg-linkedin,  $svg-linkedin2,  $svg-phone,  $svg-placeholder,  $svg-pointer,  $svg-review-arrow--left,  $svg-review-arrow--right,  $svg-s1,  $svg-s2,  $svg-s3,  $svg-s4,  $svg-s5,  $svg-s6,  $svg-s7,  $svg-s8,  $svg-twitter,  $svg-twitter2,  $svg-vk,  $svg-vk2,  $svg-wave,  );
