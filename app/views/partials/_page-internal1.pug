@@ -1,0 +1,38 @@
+article.internal
+	.container
+		.row.justify-content-center
+			.col-24.col-lg-22.col-xl-20
+				section.post.internal__item
+					each text in page.text1
+						p.rn-text.internal__text!= text
+
+				- var post1 = page.post1
+				section.post.internal__item
+					.row
+						.col-24
+							h2.rn-heading.post__heading!= post1.heading
+							each descr in post1.descr
+								p.rn-text.post__text!= descr
+						.col-24
+							ol.ol-list.post__list
+								each item in post1.list
+									li.ol-list__item!= item
+						.col-24
+							each text in post1.text
+								p.rn-text.services__text.post__text!= text
+
+				- var post2 = page.post2
+				section.post.internal__item
+					.row
+						.col-24
+							h2.rn-heading.post__heading!= post2.heading
+							each descr in post2.descr
+								p.rn-text.post__text!= descr
+					.row.align-items-center
+						.col-24
+							ul.ul-list.post__list
+								each item in post2.list
+									li.ul-list__item!= item
+						.col-24
+							each text in post2.text
+								p.rn-text.services__text.post__text!= text

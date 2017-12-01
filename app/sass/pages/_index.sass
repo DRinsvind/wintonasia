@@ -1,3 +1,10 @@
+%btn-clear
+  padding: 0
+  box-shadow: none
+  background: transparent
+  border: 0 none
+  cursor: pointer
+
 section
   overflow: hidden
 
@@ -580,3 +587,213 @@ section
       margin: 0px auto
       &.swiper-button-disabled
         +display-none
+
++comment("page service style")
+.service
+  padding: 40px 0
+  &__item
+    padding: 20px 15px
+    border-bottom: 2px solid $gray
+.ct-product
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  height: 100%
+  &__heading
+    margin-bottom: 19px
+  &__descr
+    margin-bottom: 19px
+  &__btn-group
+    margin-top: auto
+  &__btn
+  &__price
+.ct-heading
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  align-items: stretch
+  +font($font,20px,400,$black)
+  text-transform: uppercase
+  &__icon
+    flex: 0 0 auto
+    max-width: none
+    margin-right: 22px
+    margin-bottom: 19px
+    font-size: 25px
+  &__text
+    flex-basis: 0
+    flex-grow: 1
+    max-width: 100%
+.ct-descr
+  +font($font,16px,400,$black)
+.ct-btn-group
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  &--between
+    justify-content: space-between
+  &__col
+    margin-top: 15px    
+    flex: 0 0 auto
+    align-items: center
+    width: auto
+    max-width: none
+.ct-price
+  display: flex
+  flex-direction: row
+  align-items: center
+  &__icon
+    margin-right: 8px
+    font-size: 10px
+    color: $hover
+  &__text
+    +font($font,20px,400,$hover)
+.btn
+  @extend %btn-clear
+  &--secondary
+    padding: 7px 62px
+    +font($font,18px,400,$hover)
+    border-radius: 20px
+    border: 2px solid $hover
+    &:hover,
+    &:focus
+      box-shadow: none
+    &:hover,
+    &:focus
+      color: #fff
+      background-color: $hover * 1.4
+  &--primary
+    padding: 7px 20px
+    +font($font,18px,400,$white)
+    border-radius: 20px
+    background-color: $hover
+    border: 2px solid $hover
+    &:hover,
+    &:focus
+      box-shadow: none
+    &:hover,
+    &:focus
+      color: #fff
+      background-color: $hover * 1.4
+  &--size
+    width: 100%
+  &--sm
+    min-width: 220px
++r(768)
+  .service
+    padding: 60px 0
+    &__item
+      padding: 40px 20px
+  .ct-product
+    &__descr
+      margin-bottom: 29px
++r(992)
+  .service
+    padding: 73px 0
+    &__item
+      padding: 40px
+
++comment("page internal style")
+.internal
+  padding: 45px 0
+  &__item
+    margin-bottom: 51px
+.post
+  &__heading
+  &__services
+    margin-bottom: 22px
+  &__list
+    margin-bottom: 29px
+.rn-heading
+  margin-bottom: 28px
+  padding-bottom: 15px
+  +font($font,20px,400,$hover)
+  text-transform: uppercase
+  border-bottom: 2px solid $hover
+.rn-text
+  margin-bottom: 29px
+  +font($font,16px,400,$black)
+.desk
+  padding: 20px
+  background-color: #999999
+  &__text
+    +font($font,20px,400,$white)
+    text-align: center
+.ol-list
+  margin: 0
+  padding: 0
+  list-style: none
+  counter-reset: list
+  &__item
+    position: relative
+    margin: 30px 0
+    padding: 7px 7px 7px 45px
+    +font($font,18px,400,$black)
+    line-height: 24px
+    &:before
+      counter-increment: list
+      content: counter(list)
+      position: absolute
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      width: 30px
+      height: 30px
+      line-height: 30px
+      top: 50%
+      left: 0
+      transform: translateY(-50%)  
+      border-radius: 50%
+      background-color: $hover
+      color: $white
+.ul-list
+  margin: 0
+  padding: 0
+  list-style: none
+  &__item
+    position: relative
+    margin: 30px 0
+    padding: 7px 7px 7px 45px
+    +font($font,18px,400,$black)
+    line-height: 24px
+    &:before
+      content: ''
+      position: absolute
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      width: 30px
+      height: 30px
+      top: 50%
+      left: 0
+      transform: translateY(-50%)  
+      border-radius: 50%
+      background-color: $hover
+      background-image: url(../img/icons/svg/star.svg)
+      background-repeat: no-repeat
+      background-position: center center
+      color: $white
++r(768)
+  .internal
+    padding: 60px 0
+  .post
+    &__services
+      margin-bottom: 44px
+  .rn-heading
+    font-size: 30px  
+  .rn-text
+    font-size: 20px
++r(992)
+  .internal
+    padding: 85px 0 0
+  .rn-heading
+    margin-bottom: 54px
+    padding-bottom: 30px
+    border-bottom-width: 4px
+  .rn-text
+    margin-bottom: 30px
+  .desk
+    padding: 53px
+  .post
+    &__list
+      margin-bottom: 59px

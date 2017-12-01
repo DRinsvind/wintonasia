@@ -1,0 +1,65 @@
+article.internal
+	.container
+		.row.justify-content-center
+			.col-24.col-lg-22.col-xl-20
+				section.post.internal__item
+					each text in page.text1
+						p.rn-text.internal__text!= text
+
+				- var post1 = page.post1
+				section.post.internal__item
+					.row
+						.col-24
+							h2.rn-heading.post__heading!= post1.heading
+							each descr in post1.descr
+								p.rn-text.post__text!= descr
+					.row.justify-content-center.services-list.post__services
+						each item, i in post1.items
+							.col-lg-6.col-md-8.col-sm-12.col-24
+								.services-item
+									.services-item__logo
+										+svg('b'+ (i + 1))
+									h4.services-item__heading!= item.text
+						.col-24
+							each text in post1.text
+								p.rn-text.services__text.post__text!= text
+
+				- var post2 = page.post2
+				section.post.internal__item
+					.row
+						.col-24
+							h2.rn-heading.post__heading!= post2.heading
+							each text in post2.text
+								p.rn-text.post__text!= text
+
+				- var post3 = page.post3
+				section.post.internal__item
+					.row
+						.col-24
+							h2.rn-heading.post__heading!= post3.heading
+							each descr in post3.descr
+								p.rn-text.post__text!= descr
+					.row.align-items-center
+						.col-24.col-lg-12.col-xl-13
+							ol.ol-list.post__list
+								each item in post3.list
+									li.ol-list__item!= item
+						.col-24.col-lg-12.col-xl-11
+							.desk
+								p.desk__text!= post3.desk.text
+
+				- var post4 = page.post4
+				section.post.internal__item
+					.row
+						.col-24
+							h2.rn-heading.post__heading!= post4.heading
+							each text in post4.text
+								p.rn-text.post__text!= text
+					.row
+						.col-24
+							each descr in post4.descr
+								p.rn-text.post__text!= descr
+							ul.ul-list.post__list
+								each item in post4.list
+									li.ul-list__item!= item
+
