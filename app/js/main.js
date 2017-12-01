@@ -27,7 +27,6 @@
     click:function(){
       $('#hamburger').click(function () {
           $(this).toggleClass('open');
-          $('.nav-list').toggleClass('mobile');
       });
 
 

@@ -121,4 +121,136 @@
         max-width: 100%
         margin: 0px auto 20px
         float: none
+.more-item
+  overflow: hidden
+  height: 300px
+  padding: 50px
+  display: flex
+  flex-direction: column
+  +background('')
+  position: relative
+  z-index: 10
+  +rx(1259)
+    padding: 50px 30px
+    +rx(767)
+    padding: 30px 20px
+    height: 260px
+    +rx(600)
+      height: 150px
+      justify-content: center
+      align-items: center
+      +rx(500)
+        height: 120px
+        padding: 30px 15px
+  &> *
+    z-index: 20
+    position: relative
+  &:after
+    content: ''
+    position: absolute
+    z-index: 0
+    width: 100%
+    height: 100%
+    left: 0px
+    top: 0px
+    background-color: rgba(34,34,34,0.6)
+  &__link
+    transform: scale(1)
+    transition-property: transform
+    transition-duration: 500ms
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    margin-bottom: 50px
+    padding: 14px 20px 12px
+    border: 2px solid white
+    border-radius: 25px
+    line-height: 20px
+    text-decoration: none
+    max-width: 270px
+    display: flex
+    min-height: 50px
+    align-items: center
+    justify-content: space-between
+    +font($font,20px,700,white)
+    position: relative
+    +rx(600)
+      margin: 0px
+      text-align: center
+      font-size: 16px
+      line-height: 24px
+      padding: 10px
+    &:hover
+      text-decoration: none
+      color: $hover
 
+  &__heading
+    +font($font,25px,400,white)
+    line-height: 38px
+    position: relative
+    +rx(1259)
+      font-size: 22px
+      line-height: 34px
+      +rx(767)
+        font-size: 18px
+        line-height: 28px
+        +rx(600)
+          +display-none
+    &:after
+      content: ''
+      position: absolute
+      height: 2px
+      background-color: $hover
+      width: 120px
+      bottom: -15px
+
+
+
+  &--left
+    .more-item__heading
+      text-align: left
+      &:after
+        left: 0px
+    .more-item__link
+      &:before
+        content: ''
+        position: relative
+        width: 15px
+        min-width: 15px
+        height: 9px
+        display: block
+        margin-right: 17px
+        +background('../img/icons/svg/blog-prev.svg')
+        +rx(600)
+          +display-none
+      &:hover
+        transform: scale(1.1)
+        &:before
+          animation-name: moreItem
+          animation-duration: 500ms
+          transform: scale(1.3)
+  &--right
+    .more-item__heading
+      text-align: right
+      &:after
+        right: 0px
+    .more-item__link
+      margin-left: auto
+      &:after
+        content: ''
+        position: relative
+        width: 15px
+        min-width: 15px
+        height: 9px
+        display: block
+        margin-left: 17px
+        +background('../img/icons/svg/blog-next.svg')
+        +rx(600)
+          +display-none
+      &:hover
+        transform: scale(1.1)
+        &:after
+          animation-name: moreItem
+          animation-duration: 500ms
+          transform: scale(1.3)

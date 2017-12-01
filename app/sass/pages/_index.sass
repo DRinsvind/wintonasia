@@ -163,10 +163,12 @@ section
 .adventages
   position: relative
   overflow: visible
+  z-index: 1
 .wawe-adventages
   position: absolute
   width: 100%
   bottom: -60px
+  z-index: -1
 
 
 .adventages-top
@@ -311,12 +313,21 @@ section
             height: 60px
 .callback
   padding: 80px 0px 0px
+  &--p0
+    padding: 0
+  &__heading
+    margin-bottom: 49px
+    text-align: center
   +rx(1000)
     padding-top: 60px
     +rx(750)
       padding-top: 45px
       +rx(500)
         padding-top: 35px
+.cb-heading
+  +font($font,18px,400,$white)
+  +r(768)
+    font-size: 25px
 .callback-wrapper
   padding: 150px 0px 100px
   background-repeat: no-repeat
@@ -704,6 +715,8 @@ section
     margin-bottom: 22px
   &__list
     margin-bottom: 29px
+  &:last-child(:not(:first-child))
+    margin: 20px
 .rn-heading
   margin-bottom: 28px
   padding-bottom: 15px

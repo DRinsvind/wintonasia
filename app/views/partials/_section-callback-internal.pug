@@ -1,0 +1,14 @@
+section.callbackcallback--p0
+	.callback-wrapper(style='background-image:url(./img/index/callback.png)')
+		.container
+			.row
+				.col-24
+					h2.cb-heading.callback__heading!= content.internal.callback.heading
+			.row.justify-content-center
+				.col-24.col-xl-20
+					form.callback-form
+						input.callback-input(placeholder='Имя', type='text', required)
+						input.callback-input(placeholder='E-mail', type='email', required)
+						input.callback-input(placeholder='Телефон', type='text', required)
+						button.callback-button Отправить
+					p.callback-text!= content.internal.callback.text
