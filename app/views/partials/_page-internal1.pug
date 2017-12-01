@@ -12,14 +12,14 @@ article.internal
 						.col-24
 							h2.rn-heading.post__heading!= post1.heading
 							each descr in post1.descr
-								p.rn-text.post__text!= descr
+								p!= descr
 						.col-24
-							ol.ol-list.post__list
+							ol
 								each item in post1.list
-									li.ol-list__item!= item
+									li!= item
 						.col-24
 							each text in post1.text
-								p.rn-text.services__text.post__text!= text
+								p!= text
 
 				- var post2 = page.post2
 				section.post.internal__item
@@ -27,12 +27,12 @@ article.internal
 						.col-24
 							h2.rn-heading.post__heading!= post2.heading
 							each descr in post2.descr
-								p.rn-text.post__text!= descr
+								p!= descr
 					.row.align-items-center
 						.col-24
-							ul.ul-list.post__list
+							ul
 								each item in post2.list
-									li.ul-list__item!= item
+									li!= item
 						.col-24
 							each text in post2.text
-								p.rn-text.services__text.post__text!= text
+								p!= text

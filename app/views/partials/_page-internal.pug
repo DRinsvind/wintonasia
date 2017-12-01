@@ -22,7 +22,7 @@ article.internal
 									h4.services-item__heading!= item.text
 						.col-24
 							each text in post1.text
-								p.rn-text.services__text.post__text!= text
+								p!= text
 
 				- var post2 = page.post2
 				section.post.internal__item
@@ -41,9 +41,9 @@ article.internal
 								p.rn-text.post__text!= descr
 					.row.align-items-center
 						.col-24.col-lg-12.col-xl-13
-							ol.ol-list.post__list
+							ol
 								each item in post3.list
-									li.ol-list__item!= item
+									li!= item
 						.col-24.col-lg-12.col-xl-11
 							.desk
 								p.desk__text!= post3.desk.text
@@ -59,7 +59,7 @@ article.internal
 						.col-24
 							each descr in post4.descr
 								p.rn-text.post__text!= descr
-							ul.ul-list.post__list
+							ul
 								each item in post4.list
-									li.ul-list__item!= item
+									li!= item
 

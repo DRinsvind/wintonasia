@@ -717,6 +717,63 @@ section
     margin-bottom: 29px
   &:last-child(:not(:first-child))
     margin: 20px
+  ol
+    margin: 0 0 29px
+    padding: 0
+    list-style: none
+    counter-reset: list
+    li
+      position: relative
+      margin: 30px 0
+      padding: 7px 7px 7px 45px
+      +font($font,18px,400,$black)
+      line-height: 24px
+      &:before
+        counter-increment: list
+        content: counter(list)
+        position: absolute
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        width: 30px
+        height: 30px
+        line-height: 30px
+        top: 50%
+        left: 0
+        transform: translateY(-50%)  
+        border-radius: 50%
+        background-color: $hover
+        color: $white
+  ul
+    margin-bottom: 0 0 29px
+    padding: 0
+    list-style: none
+    li
+      position: relative
+      margin: 30px 0
+      padding: 7px 7px 7px 45px
+      +font($font,18px,400,$black)
+      line-height: 24px
+      &:before
+        content: ''
+        position: absolute
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        width: 30px
+        height: 30px
+        top: 50%
+        left: 0
+        transform: translateY(-50%)  
+        border-radius: 50%
+        background-color: $hover
+        background-image: url(../img/icons/svg/star.svg)
+        background-repeat: no-repeat
+        background-position: center center
+        color: $white
+  p
+    margin-bottom: 29px
+    +font($font,16px,400,$black)
 .rn-heading
   margin-bottom: 28px
   padding-bottom: 15px
@@ -792,6 +849,8 @@ section
   .post
     &__services
       margin-bottom: 44px
+    p
+      font-size: 20px
   .rn-heading
     font-size: 30px  
   .rn-text
@@ -810,3 +869,9 @@ section
   .post
     &__list
       margin-bottom: 59px
+    ol
+      margin-bottom: 59px
+    ul
+      margin-bottom: 59px
+    p
+      margin-bottom: 30px
