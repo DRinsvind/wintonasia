@@ -1,0 +1,35 @@
+
+section.about
+	.container
+		p.site-text!= page.text1
+		.site-excerpt
+			h3.site-excerpt__heading!= page.subHeading1
+			p.site-excerpt__text!= page.text2
+		p.site-text!= page.text3
+		h2.site-heading.site-heading--margin-60!= page.subHeading2
+
+		.services-list.row.justify-content-center
+			each item, i in page.items
+				.col-lg-6.col-md-8.col-sm-12.col-24
+					.services-item
+						.services-item__logo
+							+svg('s'+ (i + 1))
+						h4.services-item__heading!= item.text
+						a.full
+		.site-excerpt
+			h3.site-excerpt__heading!= page.subHeading3
+			p.site-excerpt__text!= page.text4
+		p.site-text!= page.text3
+		h2.site-heading!= page.subHeading4
+		p.site-text.site-text--text-center!= page.text5
+		.facilities-list
+			each item, i in page.facilities
+					.facilities-item
+						.facilities-item__logo
+							+svg(item.svg)
+						h3.facilities-item__heading!= item.heading
+						p.facilities-item__text!= item.text
+	.choise-block(style='background-image:url(./img/bg-about.jpg)')
+		p.choise-block__text!= page.final
+
+		

@@ -1,0 +1,158 @@
+.choise-block
+  +background()
+  padding: 138px 20px 137px
+  +rx(767)
+    padding: 50px 20px
+  &__text
+    max-width: 1005px
+    margin: 0px auto
+    +font($font,30px,400,white)
+    line-height: 45px
+    text-align: center
+    +rx(767)
+      line-height: 32px
+      font-size: 22px
+      +rx(500)
+        line-height: 26px
+        font-size: 18px
+    span
+      text-transform: uppercase
+      color: $hover
+.site-text
+  max-width: 1005px
+  margin: 0px auto 50px
+  +font($font,20px,400,$black)
+  line-height: 30px
+  +rx(767)
+    line-height: 28px
+    font-size: 18px
+  &--text-center
+    text-align: center
+    max-width: 680px
+    margin: 0px auto 40px
+.about
+  padding-top: 90px
+  +rx(767)
+    padding-top: 50px
+.site-excerpt
+  max-width: 1005px
+  margin: 0px auto 50px
+  display: flex
+  +rx(991)
+    flex-direction: column
+  &__heading
+    +font($font,30px,400,$black)
+    line-height: 45px
+    text-transform: uppercase
+    margin: 0px 35px 0px 0px
+    min-width: 330px
+    max-width: 330px
+    position: relative
+    padding: 0px 0px 10px
+    +rx(767)
+      line-height: 32px
+      font-size: 22px
+    +rx(991)
+      margin-bottom: 30px
+      max-width: 100%
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      background-color: $hover
+      height: 4px
+      bottom: 10px
+      left: 0px
+      max-width: 300px
+      +rx(991)
+        position: relative
+        display: block
+        bottom: 0px
+        max-width: 180px
+    span
+      color: $hover
+  &__text
+    +font($font,20px,400,$black)
+    line-height: 30px
+    margin: 0px
+    +rx(767)
+      line-height: 28px
+      font-size: 18px
+.site-heading
+  margin: 40px auto 37px
+  text-transform: uppercase
+  max-width: 1005px
+  +font($font,25px,700,$black)
+  text-align: center
+  +rx(767)
+    line-height: 30px
+    font-size: 20px
+  &--margin-60
+    margin-bottom: 60px
+.facilities-list
+  margin: 0px auto 90px
+  overflow: hidden
+  max-width: 1300px
+  display: flex
+  flex-wrap: wrap
+  +rx(991)
+    margin-bottom: 40px
+.facilities-item
+  width: 50%
+  box-sizing: border-box
+  padding: 40px 20px 0px
+  border: 2px solid #e7e7e7
+  border-right: none
+  border-bottom: none
+  margin-top: -2px
+  margin-left: -2px
+  +rx(991)
+    width: 100%
+    border: none
+    padding: 0px
+    margin: 0px 0px 20px
+  &__logo
+    width: 80px
+    height: 80px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0px auto 35px
+    +rx(991)
+      margin-bottom: 25px
+    border-radius: 50%
+    background-color: $hover
+    color: white
+    overflow: hidden
+    svg
+      height: 40px
+      width: auto
+      transform: scale(1)
+      transition-property: transform
+      transition-duration: 500ms
+    &:hover
+      svg
+        transform: scale(1.2)
+  &__heading
+    margin: 0px auto 25px
+    text-align: center
+    line-height: 30px
+    +font($font,20,700,$black)
+    text-transform: uppercase
+    max-width: 455px
+    +rx(991)
+      margin: 0px auto 5px
+      +rx(767)
+        line-height: 28px
+        font-size: 18px
+  &__text
+    margin: 0px auto 35px
+    text-align: center
+    line-height: 30px
+    +font($font,20px,400,$black)
+    max-width: 455px
+    +rx(991)
+      margin: 0px auto 20px
+      +rx(767)
+        line-height: 28px
+        font-size: 18px

@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3be43d81-0ffa-4366-be92-96d385a8129c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/sass/pages/_about.sass" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/about.pug" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/partials/_page-about.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/blog.html" afterPath="$PROJECT_DIR$/app/blog.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/blog_page.html" afterPath="$PROJECT_DIR$/app/blog_page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/contacts.html" afterPath="$PROJECT_DIR$/app/contacts.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/fonts.css" afterPath="$PROJECT_DIR$/app/css/fonts.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/style.css" afterPath="$PROJECT_DIR$/app/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/img/sprite.svg" afterPath="$PROJECT_DIR$/app/img/sprite.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/main.js" afterPath="$PROJECT_DIR$/app/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/pages/_global.sass" afterPath="$PROJECT_DIR$/app/sass/pages/_global.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/partials/_header.sass" afterPath="$PROJECT_DIR$/app/sass/partials/_header.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/utils/_varibles.sass" afterPath="$PROJECT_DIR$/app/sass/utils/_varibles.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/_header.pug" afterPath="$PROJECT_DIR$/app/views/partials/_header.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/_page-heading.pug" afterPath="$PROJECT_DIR$/app/views/partials/_page-heading.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/style.sass" afterPath="$PROJECT_DIR$/app/sass/style.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/utils/_sprite-svg.scss" afterPath="$PROJECT_DIR$/app/sass/utils/_sprite-svg.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/utils/_variables.pug" afterPath="$PROJECT_DIR$/app/views/utils/_variables.pug" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,30 +70,18 @@
           <file leaf-file-name="_section-services.pug" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/partials/_section-services.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+                <state relative-caret-position="150">
+                  <caret line="10" column="30" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="10" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_header.sass" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/sass/partials/_header.sass">
+          <file leaf-file-name="_page-about.pug" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/views/partials/_page-about.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#796#994#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_global.sass" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/sass/pages/_global.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="392">
-                  <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+                <state relative-caret-position="312">
+                  <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -100,40 +89,6 @@
           </file>
           <file leaf-file-name="_varibles.sass" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/sass/utils/_varibles.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="763">
-                  <caret line="1298" column="0" lean-forward="false" selection-start-line="1298" selection-start-column="0" selection-end-line="1298" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_header.pug" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/views/partials/_header.pug">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/js/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="177">
-                  <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-                  <folding>
-                    <element signature="e#1051#2851#0" expanded="false" />
-                    <element signature="e#2941#5898#0" expanded="false" />
-                    <element signature="e#3060#5064#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="blog_page.pug" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/blog_page.pug">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="180">
                   <caret line="12" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
@@ -152,7 +107,13 @@
               </provider>
             </entry>
           </file>
-        </leaf>
+                    <element signature="e#1051#2851#0" expanded="false" />
+                    <element signature="e#2941#5898#0" expanded="false" />
+                    <element signature="e#3060#5064#0" expanded="false" />
+                  </folding>
+          <file leaf-file-name="blog_page.pug" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/blog_page.pug">
+          <file leaf-file-name="_page-blog-page.pug" pinned="false" current-in-tab="false">
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -199,8 +160,8 @@
           <file leaf-file-name="_variables.pug" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/utils/_variables.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="902">
-                  <caret line="414" column="7" lean-forward="false" selection-start-line="414" selection-start-column="7" selection-end-line="414" selection-end-column="7" />
+                <state relative-caret-position="416">
+                  <caret line="447" column="30" lean-forward="true" selection-start-line="447" selection-start-column="30" selection-end-line="447" selection-end-column="30" />
                   <folding>
                     <element signature="e#96#3480#0" expanded="false" />
                     <element signature="e#187#905#0" expanded="false" />
@@ -212,11 +173,17 @@
                     <element signature="e#7225#8200#0" expanded="false" />
                     <element signature="e#8350#8874#0" expanded="false" />
                     <element signature="e#12348#14439#0" expanded="false" />
-                    <marker date="1512129618563" expanded="true" signature="82:16188" ph="{...}" />
-                    <marker date="1512129618563" expanded="true" signature="14509:16188" ph="{&quot;title&quot;: 'Блог'...}" />
-                    <marker date="1512129618563" expanded="true" signature="16166:16188" ph="[...]" />
-                    <marker date="1512129618563" expanded="true" signature="16176:16188" ph="{&quot;img&quot;: './img/m1.png'...}" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_about.sass" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/sass/pages/_about.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="289">
+                  <caret line="102" column="24" lean-forward="false" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="24" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -236,6 +203,16 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="371">
                   <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="about.pug" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/about.pug">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -295,8 +272,8 @@
       <find>br</find>
       <find>300</find>
       <find>маневр</find>
-      <find>nav-list</find>
-      <find>logo</find>
+      <find>keyf</find>
+      <find>15px</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -309,7 +286,6 @@
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/sass/utils/_mixins.sass" />
         <option value="$PROJECT_DIR$/app/views/partials/_section-intro.pug" />
-        <option value="$PROJECT_DIR$/app/views/partials/_section-services.pug" />
         <option value="$PROJECT_DIR$/app/views/partials/_footer.pug" />
         <option value="$PROJECT_DIR$/app/views/index.pug" />
         <option value="$PROJECT_DIR$/app/img/icons/svg/arrow-left.svg" />
@@ -324,19 +300,23 @@
         <option value="$PROJECT_DIR$/app/views/partials/_section-clients.pug" />
         <option value="$PROJECT_DIR$/app/views/partials/_section-reviews.pug" />
         <option value="$PROJECT_DIR$/app/views/blog.pug" />
-        <option value="$PROJECT_DIR$/app/sass/style.sass" />
         <option value="$PROJECT_DIR$/app/sass/pages/_index.sass" />
         <option value="$PROJECT_DIR$/app/views/partials/_page-blog.pug" />
-        <option value="$PROJECT_DIR$/app/views/partials/_section-blog.pug" />
         <option value="$PROJECT_DIR$/app/views/contacts.pug" />
         <option value="$PROJECT_DIR$/app/views/partials/_page-contacts.pug" />
         <option value="$PROJECT_DIR$/app/views/base/_layout.pug" />
         <option value="$PROJECT_DIR$/app/views/blog_page.pug" />
-        <option value="$PROJECT_DIR$/app/sass/pages/_blog.sass" />
+        <option value="$PROJECT_DIR$/app/views/partials/_section-services.pug" />
+        <option value="$PROJECT_DIR$/app/views/partials/_section-blog.pug" />
         <option value="$PROJECT_DIR$/app/views/partials/_page-blog-page.pug" />
-        <option value="$PROJECT_DIR$/app/views/utils/_variables.pug" />
-        <option value="$PROJECT_DIR$/app/views/partials/_page-heading.pug" />
         <option value="$PROJECT_DIR$/app/sass/utils/_varibles.sass" />
+        <option value="$PROJECT_DIR$/app/sass/pages/_animation.sass" />
+        <option value="$PROJECT_DIR$/app/sass/pages/_blog.sass" />
+        <option value="$PROJECT_DIR$/app/views/about.pug" />
+        <option value="$PROJECT_DIR$/app/sass/style.sass" />
+        <option value="$PROJECT_DIR$/app/views/utils/_variables.pug" />
+        <option value="$PROJECT_DIR$/app/views/partials/_page-about.pug" />
+        <option value="$PROJECT_DIR$/app/sass/pages/_about.sass" />
         <option value="$PROJECT_DIR$/app/js/main.js" />
         <option value="$PROJECT_DIR$/app/sass/pages/_global.sass" />
         <option value="$PROJECT_DIR$/app/sass/partials/_header.sass" />
@@ -362,8 +342,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="2092" />
-    <option name="y" value="46" />
+    <option name="x" value="201" />
+    <option name="y" value="27" />
     <option name="width" value="1582" />
     <option name="height" value="855" />
   </component>
@@ -784,24 +764,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="try" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="try" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -921,12 +883,14 @@
       <workItem from="1511766038835" duration="9793000" />
       <workItem from="1511791912654" duration="5137000" />
       <workItem from="1511860521155" duration="11404000" />
-      <workItem from="1511948930853" duration="8309000" />
+      <workItem from="1511948930853" duration="15797000" />
+      <workItem from="1512047949663" duration="3440000" />
+      <workItem from="1512109337056" duration="10522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121701000" />
+    <option name="totallyTimeSpent" value="139552000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -938,7 +902,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2092" y="46" width="1582" height="855" extended-state="0" />
+    <frame x="201" y="27" width="1582" height="855" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -963,11 +927,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23880596" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20649351" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21168831" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1028,41 +990,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2400">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/jquery.reject.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/contact_me.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-693">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bemto.pug/lib/bemto.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1514">
-          <caret line="145" column="16" lean-forward="false" selection-start-line="145" selection-start-column="16" selection-end-line="145" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/_section-intro.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1241,7 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1252,10 +1178,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/style.sass">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/_page-blog.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        <state relative-caret-position="165">
+          <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/contacts.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="155" column="3" lean-forward="true" selection-start-line="155" selection-start-column="3" selection-end-line="155" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/pages/_global.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/partials/_header.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="54" column="19" lean-forward="false" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blog.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1274,10 +1243,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/_page-blog.pug">
+    <entry file="file://$PROJECT_DIR$/app/sass/pages/_blog.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+        <state relative-caret-position="14">
+          <caret line="143" column="26" lean-forward="false" selection-start-line="143" selection-start-column="26" selection-end-line="143" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/base/_layout.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="32" column="51" lean-forward="false" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/utils/_varibles.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/app/sass/pages/_animation.sass">
+        <state relative-caret-position="348">
+          <caret line="1253" column="14" lean-forward="false" selection-start-line="1253" selection-start-column="14" selection-end-line="1253" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blog_page.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/app/views/partials/_section-services.pug">
+        <state relative-caret-position="150">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="10" selection-end-column="30" />
+          <folding />
+    <entry file="file://$PROJECT_DIR$/app/sass/pages/_main.sass">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/app/views/partials/_section-blog.pug">
+        <state relative-caret-position="150">
+          <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/_page-blog-page.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1295,24 +1305,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/_section-blog.pug">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/_footer.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="49" lean-forward="false" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/_page-heading.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="65" lean-forward="false" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/contacts.pug">
+    <entry file="file://$PROJECT_DIR$/app/views/about.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blog.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1324,41 +1336,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/_footer.pug">
+    <entry file="file://$PROJECT_DIR$/app/sass/style.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="49" lean-forward="false" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/base/_layout.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="32" column="51" lean-forward="false" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/pages/_blog.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="110" column="27" lean-forward="false" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/_section-advantages.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/_page-blog-page.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="371">
+          <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
           <folding>
             <marker date="1512129618560" expanded="true" signature="7:525" ph="..." />
             <marker date="1512129618560" expanded="true" signature="31:525" ph="..." />
@@ -1367,10 +1348,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blog_page.pug">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/_section-advantages.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1393,8 +1374,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/utils/_variables.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="414" column="7" lean-forward="false" selection-start-line="414" selection-start-column="7" selection-end-line="414" selection-end-column="7" />
+        <state relative-caret-position="416">
+          <caret line="447" column="30" lean-forward="true" selection-start-line="447" selection-start-column="30" selection-end-line="447" selection-end-column="30" />
           <folding>
             <element signature="e#96#3480#0" expanded="false" />
             <element signature="e#187#905#0" expanded="false" />
@@ -1414,18 +1395,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/_page-heading.pug">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/_page-about.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="69" lean-forward="false" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
+        <state relative-caret-position="312">
+          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/utils/_varibles.sass">
+    <entry file="file://$PROJECT_DIR$/app/sass/pages/_about.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="1298" column="0" lean-forward="false" selection-start-line="1298" selection-start-column="0" selection-end-line="1298" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="102" column="24" lean-forward="false" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="24" />
           <folding />
         </state>
       </provider>

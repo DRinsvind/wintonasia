@@ -1,0 +1,23 @@
+section.service
+	.container
+		.row.align-items-stretch
+			each item in page.product.items
+				.col-24.col-md-12
+					.ct-product.service__item
+						h2.ct-heading.ct-product__heading
+							+svg(item.icon)(class="ct-heading__icon")
+							span.ct-heading__text!= item.heading
+						p.ct-product__descr.ct-descr!= item.descr
+						.ct-btn-group.ct-btn-group--between.ct-product__btn-group
+							.ct-btn-group__col
+								a.btn.btn--secondary.btn--sm.ct-product__btn(href=item.btn.href)!= item.btn.text
+							- var price = item.price
+							if (price.btn)
+								.ct-btn-group__col
+									a.btn.btn--primary.btn--sm.ct-product__btn(href=price.btn.href)!= price.btn.text
+							else
+								.ct-btn-group__col
+									.ct-price.ct-product__price
+										+svg(price.icon)(class="ct-price__icon")
+										span.ct-price__text!= price.text
+
