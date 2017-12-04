@@ -1,19 +1,28 @@
-header(class=page.header)
+header.header(class=page.header)
   .container
     .row.justify-content-between.header-block.align-items-center
       .logo
-         img(src='img/logo/logo.png')
-         a.full(href='./index.html')
+        img(src='img/logo/logo.png')
+        a.full(href='./index.html')
       .header-content
-         .header-nav
-           div(id="hamburger")
-             span
-             span
-             span
-           ul.nav-list
-             each item, i in content.site.nav.links
-               li.nav-list__child
-                 a.nav-list__link(href=item.href)!= item.displayName
-         .languale-nav
-           each item, i in content.site.lang
-             a.language-item(href=item.link,class={'language-item--active':item.active===true})!= item.name
+        .header-nav
+          div(id="hamburger")
+            span
+            span
+            span
+          ul.nav-list
+            each item, i in content.site.nav.links
+              li.nav-list__child
+                a.nav-list__link(href=item.href)!= item.displayName
+                if (item.sublist)
+                  .nav-list__dropdown
+                    .container
+                      ul.sub-list.nav-list__sub
+                        each subItem in item.sublist.links
+                          li.sub-list__item
+                            a.sub-list__link(href=subItem.href)!= subItem.text
+
+
+        .languale-nav
+          each item, i in content.site.lang
+            a.language-item(href=item.link,class={'language-item--active':item.active===true})!= item.name

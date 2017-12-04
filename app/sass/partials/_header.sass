@@ -1,4 +1,4 @@
-header
+.header
   position: relative
   box-shadow: 0 0 19px rgba(51, 51, 51, 0.25)
   z-index: 300
@@ -61,6 +61,8 @@ header
     &:hover
       text-decoration: none
       color: $hover
+      &+.nav-list__dropdown
+        opacity: 1
   &.mobile
     +display
     height: auto
@@ -100,7 +102,46 @@ header
         background-color: $hover
         margin: 0px auto
         bottom: 0px
+  &__dropdown
+    position: absolute
+    left: 0
+    top: 100%
+    width: 100%
+    box-shadow: 0 0 19px rgba(51, 51, 51, 0.25)
+    background-color: #fafafa
+    opacity: 0
+    transition: all .3s ease-out
 
+.sub-list
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: center
+  margin: 0
+  padding: 0
+  list-style: none
+  text-align: center
+  +r(992)
+    padding: 49px 0
+  &__item
+    flex: 0 0 100%
+    max-width: 100%
+    +r(768)
+      flex: 0 0 50%
+      max-width: 50%
+    +r(992)
+      flex: 0 0 25%
+      max-width: 25%
+      text-align: left
+  &__link
+    display: block
+    padding: 11px 0
+    +font($font, 16px, 400, $black)
+    transition: all .3s ease-out
+    &:hover
+      text-decoration: none
+      color: $hover
+  
 
 
 .languale-nav
