@@ -4651,6 +4651,20 @@ section {
   border: 1px solid #999999;
 }
 
+.wpcf7-form-control-wrap {
+  width: 45%;
+}
+
+@media only screen and (max-width: 767px) {
+  .wpcf7-form-control-wrap {
+    width: 100%;
+  }
+}
+
+.wpcf7-form-control-wrap .callback-input {
+  width: 100%;
+}
+
 .callback-button {
   color: white !important;
   text-align: center;
@@ -5903,6 +5917,18 @@ a.full {
   height: 100%;
   left: 0px;
   top: 0px;
+}
+
+.wpcf7-validation-errors {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+.wpcf7-mail-sent-ok {
+  color: white;
 }
 
 .blog {
