@@ -29,8 +29,6 @@
           $(this).toggleClass('open');
           $('.nav-list').toggleClass('mobile');
       });
-
-
     },
     adventuresCustomSlider:function(){
       var ww = $(window).width();
@@ -165,3 +163,40 @@
   })
 
 })(jQuery); // End of use strict
+
+/////ajax-contacts//////////
+var cont_id;
+var url_controller = "/ajax-adres.php";
+
+$('.id-cont').on('change', function() {
+  cont_id = $('.id-cont').val();
+  //alert(cont_id);
+  // e.preventDefault();   
+  $.ajax({
+    type: "POST",
+    data: {
+      cont_id: cont_id
+    },
+    dataType: "html",
+    url: url_controller,
+    success: function(data) {
+      var $data = $(data);
+      $('.cont-list').empty();
+      $('.cont-list').html($data);
+    }
+  });
+
+  $.ajax({
+    type: "POST",
+    data: {
+      cont_id: cont_id
+    },
+    dataType: "html",
+    url: "/ajax-map.php",
+    success: function(data) {
+      var $data = $(data);
+      $('.map').html($data);
+    }
+  });
+});
+  /////////////////////////////////
