@@ -144,7 +144,126 @@ header
     &:hover
       text-decoration: none
       color: $hover
-  
+
+
+.nav-list
+  display: flex
+  list-style: none
+  padding: 0px
+  margin: 0px
+  transition-property: opacity
+  transition-duration: 500ms
+  +rx(1024)
+    +display-none
+    opacity: 0
+  &>li
+    margin-right: 34px
+    &:nth-child(1)
+      margin-right: 30px
+    &:nth-child(2)
+      margin-right: 27px
+    &:nth-child(3)
+      margin-right: 28px
+    &:nth-child(4)
+      margin-right: 30px
+    &>a
+      display: block
+      +font($font, 18px, 400, $black)
+      text-decoration: none
+      &:hover
+        text-decoration: none
+        color: $hover
+  &.mobile
+    +display
+    height: auto
+    position: absolute
+    top: calc(100% + 1px)
+    left: 0px
+    width: 100%
+    display: flex
+    opacity: 1
+    flex-direction: row
+    flex-wrap: wrap
+    padding: 20px 0px
+    z-index: -1
+    background: white
+    box-shadow: 0 0 19px rgba(51, 51, 51, 0.25)
+    justify-content: center
+    &>li
+      width: 50%
+      max-width: 350px
+      margin: 0px
+      +rx(575)
+        max-width: 100%
+        width: 100%
+      &>a
+        text-transform: uppercase
+        padding: 10px 0px
+        text-align: center
+        position: relative
+        &:after
+          content: ''
+          display: block
+          position: relative
+          width: 80px
+          height: 2px
+          background-color: $hover
+          margin: 0px auto
+          bottom: 0px
+.nav-list
+  .sub-menu
+    position: absolute
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: center
+    margin: 0 auto
+    padding: 0 15px
+    left: 50%
+    top: 100%
+    width: 100%
+    max-width: 1230px
+    transform: translateX(-50%)
+    visibility: hidden
+    opacity: 0
+    list-style: none
+    text-align: center
+    transition: all .3s ease-out
+    z-index: 1
+    &:before
+      content: ''
+      position: absolute
+      display: block
+      top: 0
+      left: -50%
+      width: 200%
+      height: 100%
+      box-shadow: 0 0 19px rgba(51, 51, 51, 0.25)
+      background-color: #fafafa
+      z-index: -1
+    +r(992)
+      padding: 49px 15px
+    &--show
+      opacity: 1
+      visibility: visible
+    &>li
+      flex: 0 0 100%
+      max-width: 100%
+      +r(768)
+        flex: 0 0 50%
+        max-width: 50%
+      +r(992)
+        flex: 0 0 25%
+        max-width: 25%
+        text-align: left
+      &>a
+        display: block
+        padding: 11px 0
+        +font($font, 16px, 400, $black)
+        transition: all .3s ease-out
+        &:hover
+          text-decoration: none
+          color: $hover
 
 .languale-nav
   display: flex

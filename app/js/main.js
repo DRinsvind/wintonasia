@@ -158,15 +158,15 @@
         $('#hamburger').removeClass('open');
         $('.nav-list').removeClass('mobile');
 
-        $('.nav-list__child').hover(function() {
+        $('.nav-list>li').hover(function() {
           console.log(delayTimer);
           if (delayTimer !== undefined) clearTimeout(delayTimer);
           var self = this;
-          $(self).find('.nav-list__dropdown').stop(true).addClass('nav-list__dropdown--show');
+          $(self).find('.sub-menu').stop(true).addClass('sub-menu--show');
         }, function() {
           var self = this;
           delayTimer = setTimeout(function() {
-            $(self).find('.nav-list__dropdown').stop(true).removeClass('nav-list__dropdown--show');
+            $(self).find('.sub-menu').stop(true).removeClass('sub-menu--show');
           }, 300);
         });
       }
