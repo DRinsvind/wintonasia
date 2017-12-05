@@ -5,9 +5,21 @@ section.callback
 		.container
 			.row.justify-content-center
 				.col-24.col-xl-20
-					form.callback-form
-						input.callback-input(placeholder='Имя', type='text', required)
-						input.callback-input(placeholder='E-mail', type='email', required)
-						input.callback-input(placeholder='Телефон', type='text', required)
-						button.callback-button Отправить
+					#wpcf7-f8-p201-o1.wpcf7(role='form', lang='ru-RU', dir='ltr')
+						.screen-reader-response
+						form.wpcf7-form.callback-form(action='/test/#wpcf7-f8-p201-o1', method='post', novalidate='novalidate')
+							div(style='display: none;')
+								input(type='hidden', name='_wpcf7', value='8')
+								input(type='hidden', name='_wpcf7_version', value='4.9.1')
+								input(type='hidden', name='_wpcf7_locale', value='ru_RU')
+								input(type='hidden', name='_wpcf7_unit_tag', value='wpcf7-f8-p201-o1')
+								input(type='hidden', name='_wpcf7_container_post', value='201')
+							span.wpcf7-form-control-wrap.your-name
+								input.callback-input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required(type='text', placeholder='Имя', name='your-name', value='', size='40', aria-required='true', aria-invalid='false')
+							span.wpcf7-form-control-wrap.your-email
+								input.callback-input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email(type='email', placeholder='E-mail', name='your-email', value='', size='40', aria-required='true', aria-invalid='false')
+							span.wpcf7-form-control-wrap.tel-937
+								input.callback-input.wpcf7-form-control.wpcf7-text.wpcf7-tel.wpcf7-validates-as-required.wpcf7-validates-as-tel(type='tel', placeholder='Телефон', name='tel-937', value='', size='40', aria-required='true', aria-invalid='false')
+							button.callback-button.wpcf7-form-control.wpcf7-submit(type='submit') Отправить
+							.wpcf7-response-output.wpcf7-display-none
 					p.callback-text!= content.index.callback.text
