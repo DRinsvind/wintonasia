@@ -153,14 +153,21 @@
         });
     },
     navbar: function() {
+      var delayTimer = undefined;
       if (matchMedia('only screen and (min-width: ' + navbarBreakpoint + 'px)').matches) {
         $('#hamburger').removeClass('open');
         $('.nav-list').removeClass('mobile');
-        
+
         $('.nav-list__child').hover(function() {
-          $(this).find('.nav-list__dropdown').stop(true, false, true).slideDown(300);
+          console.log(delayTimer);
+          if (delayTimer !== undefined) clearTimeout(delayTimer);
+          var self = this;
+          $(self).find('.nav-list__dropdown').stop(true).addClass('nav-list__dropdown--show');
         }, function() {
-          $(this).find('.nav-list__dropdown').stop(true, false, true).delay(200).slideUp(300);
+          var self = this;
+          delayTimer = setTimeout(function() {
+            $(self).find('.nav-list__dropdown').stop(true).removeClass('nav-list__dropdown--show');
+          }, 300);
         });
       }
     },

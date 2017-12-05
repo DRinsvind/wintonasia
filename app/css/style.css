@@ -3867,15 +3867,21 @@ header {
 
 .nav-list__dropdown {
   position: absolute;
-  display: none;
   left: 0;
   top: 100%;
   width: 100%;
   -webkit-box-shadow: 0 0 19px rgba(51, 51, 51, 0.25);
           box-shadow: 0 0 19px rgba(51, 51, 51, 0.25);
+  opacity: 0;
+  visibility: hidden;
   background-color: #fafafa;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
+}
+
+.nav-list__dropdown--show {
+  visibility: visible;
+  opacity: 1;
 }
 
 .sub-list {
