@@ -14,7 +14,8 @@ section.service
 							- var price = item.price
 							if (price.btn)
 								.ct-btn-group__col
-									a.btn.btn--primary.btn--sm.ct-product__btn(href=price.btn.href)!= price.btn.text
+									a.btn.btn--primary.btn--sm.ct-product__btn(href=price.btn.href, data-toggle="modal")!= price.btn.text
+									include _page-service-modal.pug
 							else
 								.ct-btn-group__col
 									.ct-price.ct-product__price

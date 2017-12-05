@@ -34,20 +34,20 @@
     <meta name="twitter:image" content="/img/logo/microformat.png"/>
     <!-- build:css css/bundle.min.css-->
     <!-- Fonts CSS-->
-    <link rel="stylesheet" href="css/fonts.css?v=1512382901946">
+    <link rel="stylesheet" href="css/fonts.css?v=1512468794936">
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="css/bootstrap.css?v=1512382901946">
+    <link rel="stylesheet" href="css/bootstrap.css?v=1512468794936">
     <!-- Font-Awesome CSS-->
-    <link rel="stylesheet" href="css/font-awesome.css?v=1512382901946">
-    <link rel="stylesheet" href="css/nice-select.css?v=1512382901946">
+    <link rel="stylesheet" href="css/font-awesome.css?v=1512468794936">
+    <link rel="stylesheet" href="css/nice-select.css?v=1512468794936">
     <!-- Custom CSS-->
-    <link rel="stylesheet" href="css/swiper.css?v=1512382901946">
-    <link rel="stylesheet" href="css/style.css?v=1512382901946">
+    <link rel="stylesheet" href="css/swiper.css?v=1512468794936">
+    <link rel="stylesheet" href="css/style.css?v=1512468794936">
     <!-- endbuild-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://--><!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js?v=1512382901946"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js?v=1512382901946"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js?v=1512468794936"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js?v=1512468794936"></script>
 <![endif]-->
   </head>
   <body class="body">
@@ -176,7 +176,51 @@
                 <p class="ct-product__descr ct-descr">Большой опыт работы, собственная информационная база позволяет подобрать для каждого клиента оптимальное решение</p>
                 <div class="ct-btn-group ct-btn-group--between ct-product__btn-group">
                   <div class="ct-btn-group__col"><a class="btn btn--secondary btn--sm ct-product__btn" href="#more">Подробнее</a></div>
-                  <div class="ct-btn-group__col"><a class="btn btn--primary btn--sm ct-product__btn" href="#get__price">Узнать стоимость</a></div>
+                  <div class="ct-btn-group__col"><a class="btn btn--primary btn--sm ct-product__btn" href="#get__price" data-toggle="modal">Узнать стоимость</a>
+                    <!-- Modal-->
+                    <div class="modal fade" id="get__price" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog--xl" role="document">
+                        <div class="modal-content modal-content--darkness">
+                          <button class="close close--white modal__close" type="button" data-dismiss="modal" aria-label="Close">
+                            <svg class="svg svg--close close__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                              <use xlink:href="img/sprite.svg#close"></use>
+                            </svg>
+                          </button>
+                          <div class="modal-body">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-24">
+                                  <h2 class="cb-heading callback__heading" id="exampleModalLabel">Вы можете узнать стоимость услуги, заполнив форму обратной связи ниже и получить ответ на многие вопросы. Обращайтесь, наши специалисты проведут весь спектр требуемых мероприятий и предложат лучшее решение для вашего бизнеса.</h2>
+                                </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                <div class="col-24">
+                                  <div class="wpcf7" id="wpcf7-f8-p201-o1" role="form" lang="ru-RU" dir="ltr">
+                                    <div class="screen-reader-response"></div>
+                                    <form class="wpcf7-form callback-form" action="/test/#wpcf7-f8-p201-o1" method="post" novalidate="novalidate">
+                                      <div style="display: none;">
+                                        <input type="hidden" name="_wpcf7" value="8">
+                                        <input type="hidden" name="_wpcf7_version" value="4.9.1">
+                                        <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f8-p201-o1">
+                                        <input type="hidden" name="_wpcf7_container_post" value="201">
+                                      </div><span class="wpcf7-form-control-wrap your-name">
+                                        <input class="callback-input wpcf7-form-control wpcf7-text wpcf7-validates-as-required" type="text" placeholder="Имя" name="your-name" value="" size="40" aria-required="true" aria-invalid="false"></span><span class="wpcf7-form-control-wrap your-email">
+                                        <input class="callback-input wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" type="email" placeholder="E-mail" name="your-email" value="" size="40" aria-required="true" aria-invalid="false"></span><span class="wpcf7-form-control-wrap tel-937">
+                                        <input class="callback-input wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" type="tel" placeholder="Телефон" name="tel-937" value="" size="40" aria-required="true" aria-invalid="false"></span>
+                                      <button class="callback-button wpcf7-form-control wpcf7-submit" type="submit">Отправить</button>
+                                      <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                    </form>
+                                  </div>
+                                  <p class="callback-text">Нажимая на кнопку “Отправить”, вы соглашаетесь на обработку своих персональных данных в соответствии с <a class="callback-link" href="#"><nobr>Политикой конфиденциальности</nobr></a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -190,7 +234,51 @@
                 <p class="ct-product__descr ct-descr">Постоянный торговый представитель в Китае – это возможность в оперативном порядке разрешать любые вопросы</p>
                 <div class="ct-btn-group ct-btn-group--between ct-product__btn-group">
                   <div class="ct-btn-group__col"><a class="btn btn--secondary btn--sm ct-product__btn" href="#more">Подробнее</a></div>
-                  <div class="ct-btn-group__col"><a class="btn btn--primary btn--sm ct-product__btn" href="#get__price">Узнать стоимость</a></div>
+                  <div class="ct-btn-group__col"><a class="btn btn--primary btn--sm ct-product__btn" href="#get__price" data-toggle="modal">Узнать стоимость</a>
+                    <!-- Modal-->
+                    <div class="modal fade" id="get__price" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog--xl" role="document">
+                        <div class="modal-content modal-content--darkness">
+                          <button class="close close--white modal__close" type="button" data-dismiss="modal" aria-label="Close">
+                            <svg class="svg svg--close close__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                              <use xlink:href="img/sprite.svg#close"></use>
+                            </svg>
+                          </button>
+                          <div class="modal-body">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-24">
+                                  <h2 class="cb-heading callback__heading" id="exampleModalLabel">Вы можете узнать стоимость услуги, заполнив форму обратной связи ниже и получить ответ на многие вопросы. Обращайтесь, наши специалисты проведут весь спектр требуемых мероприятий и предложат лучшее решение для вашего бизнеса.</h2>
+                                </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                <div class="col-24">
+                                  <div class="wpcf7" id="wpcf7-f8-p201-o1" role="form" lang="ru-RU" dir="ltr">
+                                    <div class="screen-reader-response"></div>
+                                    <form class="wpcf7-form callback-form" action="/test/#wpcf7-f8-p201-o1" method="post" novalidate="novalidate">
+                                      <div style="display: none;">
+                                        <input type="hidden" name="_wpcf7" value="8">
+                                        <input type="hidden" name="_wpcf7_version" value="4.9.1">
+                                        <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f8-p201-o1">
+                                        <input type="hidden" name="_wpcf7_container_post" value="201">
+                                      </div><span class="wpcf7-form-control-wrap your-name">
+                                        <input class="callback-input wpcf7-form-control wpcf7-text wpcf7-validates-as-required" type="text" placeholder="Имя" name="your-name" value="" size="40" aria-required="true" aria-invalid="false"></span><span class="wpcf7-form-control-wrap your-email">
+                                        <input class="callback-input wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" type="email" placeholder="E-mail" name="your-email" value="" size="40" aria-required="true" aria-invalid="false"></span><span class="wpcf7-form-control-wrap tel-937">
+                                        <input class="callback-input wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" type="tel" placeholder="Телефон" name="tel-937" value="" size="40" aria-required="true" aria-invalid="false"></span>
+                                      <button class="callback-button wpcf7-form-control wpcf7-submit" type="submit">Отправить</button>
+                                      <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                    </form>
+                                  </div>
+                                  <p class="callback-text">Нажимая на кнопку “Отправить”, вы соглашаетесь на обработку своих персональных данных в соответствии с <a class="callback-link" href="#"><nobr>Политикой конфиденциальности</nobr></a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -204,7 +292,51 @@
                 <p class="ct-product__descr ct-descr">Каждый год в КНР проходит множество презентаций, ярмарок и выставок на международном уровне</p>
                 <div class="ct-btn-group ct-btn-group--between ct-product__btn-group">
                   <div class="ct-btn-group__col"><a class="btn btn--secondary btn--sm ct-product__btn" href="#more">Подробнее</a></div>
-                  <div class="ct-btn-group__col"><a class="btn btn--primary btn--sm ct-product__btn" href="#get__price">Узнать стоимость</a></div>
+                  <div class="ct-btn-group__col"><a class="btn btn--primary btn--sm ct-product__btn" href="#get__price" data-toggle="modal">Узнать стоимость</a>
+                    <!-- Modal-->
+                    <div class="modal fade" id="get__price" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog--xl" role="document">
+                        <div class="modal-content modal-content--darkness">
+                          <button class="close close--white modal__close" type="button" data-dismiss="modal" aria-label="Close">
+                            <svg class="svg svg--close close__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                              <use xlink:href="img/sprite.svg#close"></use>
+                            </svg>
+                          </button>
+                          <div class="modal-body">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-24">
+                                  <h2 class="cb-heading callback__heading" id="exampleModalLabel">Вы можете узнать стоимость услуги, заполнив форму обратной связи ниже и получить ответ на многие вопросы. Обращайтесь, наши специалисты проведут весь спектр требуемых мероприятий и предложат лучшее решение для вашего бизнеса.</h2>
+                                </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                <div class="col-24">
+                                  <div class="wpcf7" id="wpcf7-f8-p201-o1" role="form" lang="ru-RU" dir="ltr">
+                                    <div class="screen-reader-response"></div>
+                                    <form class="wpcf7-form callback-form" action="/test/#wpcf7-f8-p201-o1" method="post" novalidate="novalidate">
+                                      <div style="display: none;">
+                                        <input type="hidden" name="_wpcf7" value="8">
+                                        <input type="hidden" name="_wpcf7_version" value="4.9.1">
+                                        <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f8-p201-o1">
+                                        <input type="hidden" name="_wpcf7_container_post" value="201">
+                                      </div><span class="wpcf7-form-control-wrap your-name">
+                                        <input class="callback-input wpcf7-form-control wpcf7-text wpcf7-validates-as-required" type="text" placeholder="Имя" name="your-name" value="" size="40" aria-required="true" aria-invalid="false"></span><span class="wpcf7-form-control-wrap your-email">
+                                        <input class="callback-input wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" type="email" placeholder="E-mail" name="your-email" value="" size="40" aria-required="true" aria-invalid="false"></span><span class="wpcf7-form-control-wrap tel-937">
+                                        <input class="callback-input wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" type="tel" placeholder="Телефон" name="tel-937" value="" size="40" aria-required="true" aria-invalid="false"></span>
+                                      <button class="callback-button wpcf7-form-control wpcf7-submit" type="submit">Отправить</button>
+                                      <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                    </form>
+                                  </div>
+                                  <p class="callback-text">Нажимая на кнопку “Отправить”, вы соглашаетесь на обработку своих персональных данных в соответствии с <a class="callback-link" href="#"><nobr>Политикой конфиденциальности</nobr></a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -218,7 +350,51 @@
                 <p class="ct-product__descr ct-descr">Оборудование из Китая оптимально сочетает ряд факторов, делающих его конкурентоспособным на мировом рынке</p>
                 <div class="ct-btn-group ct-btn-group--between ct-product__btn-group">
                   <div class="ct-btn-group__col"><a class="btn btn--secondary btn--sm ct-product__btn" href="#more">Подробнее</a></div>
-                  <div class="ct-btn-group__col"><a class="btn btn--primary btn--sm ct-product__btn" href="#get__price">Узнать стоимость</a></div>
+                  <div class="ct-btn-group__col"><a class="btn btn--primary btn--sm ct-product__btn" href="#get__price" data-toggle="modal">Узнать стоимость</a>
+                    <!-- Modal-->
+                    <div class="modal fade" id="get__price" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog--xl" role="document">
+                        <div class="modal-content modal-content--darkness">
+                          <button class="close close--white modal__close" type="button" data-dismiss="modal" aria-label="Close">
+                            <svg class="svg svg--close close__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                              <use xlink:href="img/sprite.svg#close"></use>
+                            </svg>
+                          </button>
+                          <div class="modal-body">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-24">
+                                  <h2 class="cb-heading callback__heading" id="exampleModalLabel">Вы можете узнать стоимость услуги, заполнив форму обратной связи ниже и получить ответ на многие вопросы. Обращайтесь, наши специалисты проведут весь спектр требуемых мероприятий и предложат лучшее решение для вашего бизнеса.</h2>
+                                </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                <div class="col-24">
+                                  <div class="wpcf7" id="wpcf7-f8-p201-o1" role="form" lang="ru-RU" dir="ltr">
+                                    <div class="screen-reader-response"></div>
+                                    <form class="wpcf7-form callback-form" action="/test/#wpcf7-f8-p201-o1" method="post" novalidate="novalidate">
+                                      <div style="display: none;">
+                                        <input type="hidden" name="_wpcf7" value="8">
+                                        <input type="hidden" name="_wpcf7_version" value="4.9.1">
+                                        <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f8-p201-o1">
+                                        <input type="hidden" name="_wpcf7_container_post" value="201">
+                                      </div><span class="wpcf7-form-control-wrap your-name">
+                                        <input class="callback-input wpcf7-form-control wpcf7-text wpcf7-validates-as-required" type="text" placeholder="Имя" name="your-name" value="" size="40" aria-required="true" aria-invalid="false"></span><span class="wpcf7-form-control-wrap your-email">
+                                        <input class="callback-input wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" type="email" placeholder="E-mail" name="your-email" value="" size="40" aria-required="true" aria-invalid="false"></span><span class="wpcf7-form-control-wrap tel-937">
+                                        <input class="callback-input wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" type="tel" placeholder="Телефон" name="tel-937" value="" size="40" aria-required="true" aria-invalid="false"></span>
+                                      <button class="callback-button wpcf7-form-control wpcf7-submit" type="submit">Отправить</button>
+                                      <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                    </form>
+                                  </div>
+                                  <p class="callback-text">Нажимая на кнопку “Отправить”, вы соглашаетесь на обработку своих персональных данных в соответствии с <a class="callback-link" href="#"><nobr>Политикой конфиденциальности</nobr></a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -232,7 +408,51 @@
                 <p class="ct-product__descr ct-descr">Тестирование образцов в Китае проводим в лучших лабораториях, что гарантирует достоверность и высокую точность результата</p>
                 <div class="ct-btn-group ct-btn-group--between ct-product__btn-group">
                   <div class="ct-btn-group__col"><a class="btn btn--secondary btn--sm ct-product__btn" href="#more">Подробнее</a></div>
-                  <div class="ct-btn-group__col"><a class="btn btn--primary btn--sm ct-product__btn" href="#get__price">Узнать стоимость</a></div>
+                  <div class="ct-btn-group__col"><a class="btn btn--primary btn--sm ct-product__btn" href="#get__price" data-toggle="modal">Узнать стоимость</a>
+                    <!-- Modal-->
+                    <div class="modal fade" id="get__price" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog--xl" role="document">
+                        <div class="modal-content modal-content--darkness">
+                          <button class="close close--white modal__close" type="button" data-dismiss="modal" aria-label="Close">
+                            <svg class="svg svg--close close__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                              <use xlink:href="img/sprite.svg#close"></use>
+                            </svg>
+                          </button>
+                          <div class="modal-body">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-24">
+                                  <h2 class="cb-heading callback__heading" id="exampleModalLabel">Вы можете узнать стоимость услуги, заполнив форму обратной связи ниже и получить ответ на многие вопросы. Обращайтесь, наши специалисты проведут весь спектр требуемых мероприятий и предложат лучшее решение для вашего бизнеса.</h2>
+                                </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                <div class="col-24">
+                                  <div class="wpcf7" id="wpcf7-f8-p201-o1" role="form" lang="ru-RU" dir="ltr">
+                                    <div class="screen-reader-response"></div>
+                                    <form class="wpcf7-form callback-form" action="/test/#wpcf7-f8-p201-o1" method="post" novalidate="novalidate">
+                                      <div style="display: none;">
+                                        <input type="hidden" name="_wpcf7" value="8">
+                                        <input type="hidden" name="_wpcf7_version" value="4.9.1">
+                                        <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f8-p201-o1">
+                                        <input type="hidden" name="_wpcf7_container_post" value="201">
+                                      </div><span class="wpcf7-form-control-wrap your-name">
+                                        <input class="callback-input wpcf7-form-control wpcf7-text wpcf7-validates-as-required" type="text" placeholder="Имя" name="your-name" value="" size="40" aria-required="true" aria-invalid="false"></span><span class="wpcf7-form-control-wrap your-email">
+                                        <input class="callback-input wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" type="email" placeholder="E-mail" name="your-email" value="" size="40" aria-required="true" aria-invalid="false"></span><span class="wpcf7-form-control-wrap tel-937">
+                                        <input class="callback-input wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" type="tel" placeholder="Телефон" name="tel-937" value="" size="40" aria-required="true" aria-invalid="false"></span>
+                                      <button class="callback-button wpcf7-form-control wpcf7-submit" type="submit">Отправить</button>
+                                      <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                    </form>
+                                  </div>
+                                  <p class="callback-text">Нажимая на кнопку “Отправить”, вы соглашаетесь на обработку своих персональных данных в соответствии с <a class="callback-link" href="#"><nobr>Политикой конфиденциальности</nobr></a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -323,17 +543,16 @@
         </div>
       </div>
     </footer>
-    <!-- build:js js/bundle.min.js-->
-    <!-- Popper JavaScript-->
     <!-- jQuery-->
-    <script src="js/jquery.js?v=1512382901946"></script>
+    <script src="js/jquery.js?v=1512468794936"></script>
     <!-- Bootstrap JavaScript-->
+    <script src="js/bootstrap-modal.js?v=1512468794936"></script>
     <!-- Old browsers reject JavaScript-->
-    <script src="js/jquery.reject.js?v=1512382901946"></script>
+    <script src="js/jquery.reject.js?v=1512468794936"></script>
     <!-- Custom JavaScript-->
-    <script src="js/swiper.min.js?v=1512382901946"></script>
-    <script src="js/jquery.nice-select.min.js?v=1512382901946"></script>
-    <script src="js/main.js?v=1512382901946"></script>
+    <script src="js/swiper.min.js?v=1512468794936"></script>
+    <script src="js/jquery.nice-select.min.js?v=1512468794936"></script>
+    <script src="js/main.js?v=1512468794936"></script>
     <!-- endbuild-->
   </body>
 </html>

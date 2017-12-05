@@ -33,12 +33,48 @@
 .modal
   -webkit-overflow-scrolling: touch
   transform: translateZ(0)
+  &__close
+    position: absolute
+    right: 15px
+    top: 15px
+    &:hover,
+    &:focus
+      transform: scale(1.2)
 .modal.show 
   display: flex !important
   align-items: center
 .modal-dialog
   position: relative
   margin: auto
+.modal-backdrop
+  background-color: #222
+  &.show
+    opacity: .85
+.modal-content
+  &--darkness
+    background: transparent
+    border: none
+.modal-dialog
+  &--xl
+    max-width: 1170px
+.modal-header
+  border: none
+.modal-body
+  padding: 50px 15px
+  border: none
+.close
+  cursor: pointer
+  transition: all .3s ease-out
+  z-index: 10
+  &:hover,
+  &:focus
+    color: #dc853d
+  &--white
+    opacity: 1
+    color: #fff
+  &__icon
+    font-size: 15px
+    color: inherit
 .html, 
 .body
   display: flex
@@ -50,7 +86,20 @@
   min-height: 100vh
 .main
   flex-grow: 1
-
++r(768)
+  .modal
+    &__close
+      right: 15px
+      top: 30px
+  .modal-body
+    padding: 70px 15px
++r(992)
+  .modal
+    &__close
+      right: 15px
+      top: 30px
+  .modal-body
+    padding: 100px 60px
 +cm("Typography")
 .hidden-accessible
   border: 0 !important
