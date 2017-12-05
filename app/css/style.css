@@ -3716,10 +3716,6 @@
   color: #dc853d;
 }
 
-.nav-list__link:hover + .nav-list__dropdown {
-  opacity: 1;
-}
-
 .nav-list.mobile {
   clip: rect(auto auto auto auto);
   overflow: visible;
@@ -3787,13 +3783,13 @@
 
 .nav-list__dropdown {
   position: absolute;
+  display: none;
   left: 0;
   top: 100%;
   width: 100%;
   -webkit-box-shadow: 0 0 19px rgba(51, 51, 51, 0.25);
           box-shadow: 0 0 19px rgba(51, 51, 51, 0.25);
   background-color: #fafafa;
-  opacity: 0;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }

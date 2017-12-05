@@ -153,52 +153,14 @@
         });
     },
     navbar: function() {
-      var cbpHorizontalMenu = (function() {
-
-        var $listItems = $( '.nav-list > ul > li' ),
-          $menuItems = $listItems.children( 'a' ),
-          $body = $( 'body' ),
-          current = -1;
-          
-        function init() {
-          $menuItems.on( 'click', open );
-          $listItems.on( 'click', function( event ) { event.stopPropagation(); } );
-        }
-
-        function open( event ) {
-
-          if( current !== -1 ) {
-            $listItems.eq( current ).removeClass( 'cbp-hropen' );
-          }
-
-          var $item = $( event.currentTarget ).parent( 'li' ),
-            idx = $item.index();
-
-          if( current === idx ) {
-            $item.removeClass( 'cbp-hropen' );
-            current = -1;
-          }
-          else {
-            $item.addClass( 'cbp-hropen' );
-            current = idx;
-            $body.off( 'click' ).on( 'click', close );
-          }
-
-          return false;
-
-        }
-
-        function close( event ) {
-          $listItems.eq( current ).removeClass( 'cbp-hropen' );
-          current = -1;
-        }
-
-        return { init : init };
-
-      })();
-    }
-
-
+      if (matchMedia('only screen and (min-width: 1025px)').matches) {
+        $('.nav-list__child').hover(function() {
+          $(this).find('.nav-list__dropdown').delay(200).stop(true, false, true).fadeIn(500);
+        }, function() {
+          $(this).find('.nav-list__dropdown').delay(200).stop(true, false, true).fadeOut(500);
+        });
+      }
+    },
   }
 
   init.click();
@@ -209,6 +171,7 @@
   $(window).resize(function(){
       init.adventuresCustomSlider();
       init.swiper();
+      init.navbar();
   })
 
 })(jQuery); // End of use strict

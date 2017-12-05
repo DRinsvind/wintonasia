@@ -61,8 +61,6 @@
     &:hover
       text-decoration: none
       color: $hover
-      &+.nav-list__dropdown
-        opacity: 1
   &.mobile
     +display
     height: auto
@@ -104,12 +102,12 @@
         bottom: 0px
   &__dropdown
     position: absolute
+    display: none
     left: 0
     top: 100%
     width: 100%
     box-shadow: 0 0 19px rgba(51, 51, 51, 0.25)
     background-color: #fafafa
-    opacity: 0
     transition: all .3s ease-out
 
 .sub-list
