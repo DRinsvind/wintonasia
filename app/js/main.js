@@ -20,14 +20,16 @@
       closeLink: 'Закрыть это уведомление',
     });
   });
-  var indexPaymentSwiper,indexClientsSwiper;
+  var indexPaymentSwiper,
+      indexClientsSwiper,
+      navbarBreakpoint = 1025;
 
   var init = {
 
     click:function(){
       $('#hamburger').click(function () {
-          $(this).toggleClass('open');
-          $('.nav-list').toggleClass('mobile');
+        $(this).toggleClass('open');
+        $('.nav-list').toggleClass('mobile');
       });
     },
     adventuresCustomSlider:function(){
@@ -150,16 +152,29 @@
             }
         });
     },
-
+    navbar: function() {
+      if (matchMedia('only screen and (min-width: ' + navbarBreakpoint + 'px)').matches) {
+        $('#hamburger').removeClass('open');
+        $('.nav-list').removeClass('mobile');
+        
+        $('.nav-list__child').hover(function() {
+          $(this).find('.nav-list__dropdown').stop(true, false, true).slideDown(300);
+        }, function() {
+          $(this).find('.nav-list__dropdown').stop(true, false, true).delay(200).slideUp(300);
+        });
+      }
+    },
   }
 
   init.click();
   init.custom();
   init.adventuresCustomSlider();
   init.swiper();
+  init.navbar();
   $(window).resize(function(){
-      init.adventuresCustomSlider();
-      init.swiper();
+    init.adventuresCustomSlider();
+    init.swiper();
+    init.navbar();
   })
 
 })(jQuery); // End of use strict
