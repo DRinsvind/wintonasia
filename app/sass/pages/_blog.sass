@@ -52,6 +52,7 @@
     line-height: 24px
     padding: 0px 10px 10px 0px
   &__read-more
+    position: relative
     display: block
     width: 30px
     height: 30px
@@ -60,6 +61,14 @@
     position: absolute
     bottom: 10px
     right: 10px
+    border-radius: 50%
+    transition: all .3s ease-out
+    z-index: 1
+    &:hover,
+    &:focus
+      background-image: url(../img/icons/svg/pointer-white.svg)
+      background-color: $hover
+
   &--page-blog
     margin-bottom: 60px
     .blog-item__logo
@@ -77,6 +86,9 @@
     +font($font,20px,400,#999999)
     display: block
     margin-bottom: 70px
+    &:hover,
+    &:focus
+      color: $hover
     +rx(991px)
       margin-bottom: 55px
       font-size: 18px
@@ -156,12 +168,8 @@
     top: 0px
     background-color: rgba(34,34,34,0.6)
   &__link
-    transform: scale(1)
     transition-property: transform
     transition-duration: 500ms
-    -webkit-user-select: none
-    -moz-user-select: none
-    -ms-user-select: none
     user-select: none
     margin-bottom: 50px
     padding: 14px 20px 12px
@@ -176,6 +184,7 @@
     justify-content: space-between
     +font($font,20px,700,white)
     position: relative
+    transition: all .3s ease-out
     +rx(600)
       margin: 0px
       text-align: center
@@ -184,12 +193,15 @@
       padding: 10px
     &:hover
       text-decoration: none
-      color: $hover
+      color: $white
+      background: $hover
+      border-color: $hover
 
   &__heading
     +font($font,25px,400,white)
     line-height: 38px
     position: relative
+
     +rx(1259)
       font-size: 22px
       line-height: 34px
@@ -222,20 +234,21 @@
         height: 9px
         display: block
         margin-right: 17px
+        transition-property: transform
+        transition-duration: 500ms
         +background('../img/icons/svg/blog-prev.svg')
         +rx(600)
           +display-none
+
       &:hover
         transform: scale(1.1)
         &:before
-          animation-name: moreItem
-          animation-duration: 500ms
-          transform: scale(1.3)
+          transform: translateX(-5px)
   &--right
     .more-item__heading
       text-align: right
       &:after
-        right: 0px
+        right: 0
     .more-item__link
       margin-left: auto
       &:after
@@ -246,6 +259,8 @@
         height: 9px
         display: block
         margin-left: 17px
+        transition-property: transform
+        transition-duration: 500ms
         +background('../img/icons/svg/blog-next.svg')
         +rx(600)
           +display-none
@@ -254,4 +269,4 @@
         &:after
           animation-name: moreItem
           animation-duration: 500ms
-          transform: scale(1.3)
+          transform: translateX(5px)
