@@ -3324,11 +3324,6 @@
   height: 1.875em;
 }
 
-.svg--button-hover {
-  width: 1.875em;
-  height: 1.875em;
-}
-
 .svg--close {
   width: 1.3125em;
   height: 1.3125em;
@@ -3664,6 +3659,15 @@
 /* ---------------------------------------- */
 /* H O M E    P A G E    S T Y L E          */
 /* ---------------------------------------- */
+.wpcf7-not-valid {
+  border-color: #b94a48 !important;
+}
+
+.wpcf7-not-valid-tip,
+.wpcf7-validation-errors {
+  display: none !important;
+}
+
 header {
   position: relative;
   -webkit-box-shadow: 0 0 19px rgba(51, 51, 51, 0.25);
@@ -9190,13 +9194,15 @@ a.full {
   min-height: 50px;
   min-width: 50px;
   margin-left: 20px;
+  background-color: #dc853d;
+  border-radius: 50%;
   cursor: pointer;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
 
 .footer-button:hover, .footer-button:active {
-  background-image: url(../img/icons/svg/button-hover.svg);
+  background-color: #ffba55;
 }
 
 .footer-menu {

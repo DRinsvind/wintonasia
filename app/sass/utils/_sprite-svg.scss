@@ -151,15 +151,6 @@ $svg-button-offset-y: px;
 $svg-button-image: "../img/sprite.svg";
 $svg-button: ( "button", em(30), em(30), px, px, "../img/sprite.svg" );
 
-// button-hover
-$svg-button-hover-name: "button-hover";
-$svg-button-hover-width: em(30);
-$svg-button-hover-height: em(30);
-$svg-button-hover-offset-x: px;
-$svg-button-hover-offset-y: px;
-$svg-button-hover-image: "../img/sprite.svg";
-$svg-button-hover: ( "button-hover", em(30), em(30), px, px, "../img/sprite.svg" );
-
 // close
 $svg-close-name: "close";
 $svg-close-width: em(21);
@@ -434,4 +425,4 @@ $svg-wave: ( "wave", em(32), em(11.13), px, px, "../img/sprite.svg" );
 $svg-spritesheet-width: px;
 $svg-spritesheet-height: px;
 $svg-spritesheet-image: "../img/sprite.svg";
-$svg-spritesheet-sprites: ( $svg-a1,  $svg-a2,  $svg-a3,  $svg-a4,  $svg-arrow-left,  $svg-arrow-right,  $svg-b1,  $svg-b2,  $svg-b3,  $svg-b4,  $svg-b5,  $svg-b6,  $svg-b7,  $svg-b8,  $svg-blog-next,  $svg-blog-prev,  $svg-button,  $svg-button-hover,  $svg-close,  $svg-email,  $svg-f1,  $svg-f2,  $svg-f3,  $svg-f4,  $svg-facebook,  $svg-facebook2,  $svg-linkedin,  $svg-linkedin2,  $svg-phone,  $svg-placeholder,  $svg-pointer,  $svg-pointer-white,  $svg-review-arrow--left,  $svg-review-arrow--right,  $svg-s1,  $svg-s2,  $svg-s3,  $svg-s4,  $svg-s5,  $svg-s6,  $svg-s7,  $svg-s8,  $svg-star,  $svg-twitter,  $svg-twitter2,  $svg-vk,  $svg-vk2,  $svg-wave,  );
+$svg-spritesheet-sprites: ( $svg-a1,  $svg-a2,  $svg-a3,  $svg-a4,  $svg-arrow-left,  $svg-arrow-right,  $svg-b1,  $svg-b2,  $svg-b3,  $svg-b4,  $svg-b5,  $svg-b6,  $svg-b7,  $svg-b8,  $svg-blog-next,  $svg-blog-prev,  $svg-button,  $svg-close,  $svg-email,  $svg-f1,  $svg-f2,  $svg-f3,  $svg-f4,  $svg-facebook,  $svg-facebook2,  $svg-linkedin,  $svg-linkedin2,  $svg-phone,  $svg-placeholder,  $svg-pointer,  $svg-pointer-white,  $svg-review-arrow--left,  $svg-review-arrow--right,  $svg-s1,  $svg-s2,  $svg-s3,  $svg-s4,  $svg-s5,  $svg-s6,  $svg-s7,  $svg-s8,  $svg-star,  $svg-twitter,  $svg-twitter2,  $svg-vk,  $svg-vk2,  $svg-wave,  );
