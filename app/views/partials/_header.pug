@@ -11,31 +11,14 @@ header.header(class=page.header)
             span
             span
           ul.nav-list.top-menu
-            li#menu-item-251.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-251
-              a(href='http://wintonasia.kvk-dev.pp.ua/o-kompanii/') О компании
-            li#menu-item-291.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-291
-              a(href='http://wintonasia.kvk-dev.pp.ua/uslugi/') Услуги и цены
-              ul.sub-menu
-                li#menu-item-292.menu-item.menu-item-type-post_type.menu-item-object-uslugi.menu-item-292
-                  a(href='http://wintonasia.kvk-dev.pp.ua/uslugi/poisk-proizvoditelej-v-kitae/') Поиск производителей в Китае
-                li#menu-item-293.menu-item.menu-item-type-post_type.menu-item-object-uslugi.menu-item-293
-                  a(href='http://wintonasia.kvk-dev.pp.ua/uslugi/predstavitel-br-v-kitae/') Представитель в Китае
-                li#menu-item-294.menu-item.menu-item-type-post_type.menu-item-object-uslugi.menu-item-294
-                  a(href='http://wintonasia.kvk-dev.pp.ua/uslugi/proverka-kachestva-tovarov/') Проверка качества товаров
-                li#menu-item-297.menu-item.menu-item-type-post_type.menu-item-object-uslugi.menu-item-297
-                  a(href='http://wintonasia.kvk-dev.pp.ua/uslugi/oborudovanie-br-iz-kitaya/') Оборудование из Китая
-                li#menu-item-295.menu-item.menu-item-type-post_type.menu-item-object-uslugi.menu-item-295
-                  a(href='http://wintonasia.kvk-dev.pp.ua/uslugi/audit-i-proverka-postavshhikov/') Аудит и проверка поставщиков
-                li#menu-item-296.menu-item.menu-item-type-post_type.menu-item-object-uslugi.menu-item-296
-                  a(href='http://wintonasia.kvk-dev.pp.ua/uslugi/nezavisimoe-testirovanie-obraztsov/') Независимое тестирование образцов
-                li#menu-item-299.menu-item.menu-item-type-post_type.menu-item-object-uslugi.menu-item-299
-                  a(href='http://wintonasia.kvk-dev.pp.ua/uslugi/proizvodstvo-tovarov-v-kitae/') Производство товаров в Китае
-                li#menu-item-298.menu-item.menu-item-type-post_type.menu-item-object-uslugi.menu-item-298
-                  a(href='http://wintonasia.kvk-dev.pp.ua/uslugi/organizatsiya-poseshheniya-vystavok/') Организация посещения выставок
-            li#menu-item-289.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-289
-              a(href='http://wintonasia.kvk-dev.pp.ua/blog/') Блог
-            li#menu-item-290.menu-item.menu-item-type-post_type.menu-item-object-page.current-menu-item.page_item.page-item-152.current_page_item.menu-item-290
-              a(href='http://wintonasia.kvk-dev.pp.ua/kontakty/') Контакты
+            each item, i in content.site.nav.links
+              li.menu-item.menu-item-type-post_type.menu-item-object-page
+                a(href=item.href)!= item.displayName
+                if (item.sublist)
+                  ul.sub-menu
+                    each subItem in item.sublist.links
+                      li.menu-item.menu-item-type-post_type.menu-item-object-uslugi
+                        a(href=subItem.href)!= subItem.text
 
           //- ul.nav-list
           //-   each item, i in content.site.nav.links
