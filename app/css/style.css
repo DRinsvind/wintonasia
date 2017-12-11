@@ -3681,6 +3681,11 @@ header {
   }
 }
 
+header.homeclass {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .header-block {
   padding: 42px 0px;
 }
@@ -5827,7 +5832,7 @@ section {
 }
 
 .post ol {
-  margin: 0 0 29px;
+  margin: 0 0 30px;
   padding: 0;
   list-style: none;
   counter-reset: list;
@@ -5835,7 +5840,7 @@ section {
 
 .post ol li {
   position: relative;
-  margin: 30px 0;
+  margin: 10px 0 21px;
   padding: 7px 7px 7px 45px;
   font-size: 18px;
   font-family: "Circe", sans-serif;
@@ -5882,7 +5887,7 @@ section {
 
 .post ul li {
   position: relative;
-  margin: 30px 0;
+  margin: 5px 0 15px;
   padding: 7px 7px 7px 45px;
   font-size: 18px;
   font-family: "Circe", sans-serif;
@@ -5971,7 +5976,7 @@ section {
 
 .ol-list__item {
   position: relative;
-  margin: 30px 0;
+  margin: 10px 0 21px;
   padding: 7px 7px 7px 45px;
   font-size: 18px;
   font-family: "Circe", sans-serif;
@@ -6018,7 +6023,7 @@ section {
 
 .ul-list__item {
   position: relative;
-  margin: 30px 0;
+  margin: 5px 0 15px;
   padding: 7px 7px 7px 45px;
   font-size: 18px;
   font-family: "Circe", sans-serif;
@@ -6092,16 +6097,18 @@ section {
     padding: 53px;
   }
   .post__list {
-    margin-bottom: 59px;
+    margin-bottom: 42px;
   }
   .post ol {
-    margin-bottom: 59px;
+    margin-bottom: 42px;
   }
   .post ul {
-    margin-bottom: 59px;
+    margin-bottom: 42px;
   }
   .post p {
     margin-bottom: 30px;
+    font-size: 19px;
+    line-height: 30px;
   }
 }
 
