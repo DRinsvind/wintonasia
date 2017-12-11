@@ -1,5 +1,7 @@
 
 section.about
+	.about-map
+		img(src='img/map.png')
 	.container
 		p.site-text!= page.text1
 		.site-excerpt
@@ -16,10 +18,9 @@ section.about
 							+svg('s'+ (i + 1))
 						h4.services-item__heading!= item.text
 						a.full
-		.site-excerpt
+		.site-excerpt.site-excerpt--big-margin
 			h3.site-excerpt__heading!= page.subHeading3
 			p.site-excerpt__text!= page.text4
-		p.site-text!= page.text3
 		h2.site-heading!= page.subHeading4
 		p.site-text.site-text--text-center!= page.text5
 		.facilities-list

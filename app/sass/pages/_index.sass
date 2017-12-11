@@ -639,6 +639,9 @@ section
 +comment("page service style")
 .service
   padding: 40px 0
+  .ct-btn-group
+    +r(1200)
+      max-width: 471px
   &__item
     padding: 20px 15px
     border-bottom: 2px solid $gray
@@ -662,11 +665,12 @@ section
   align-items: stretch
   +font($font,20px,400,$black)
   text-transform: uppercase
+  margin-bottom: 7px
   &__icon
     flex: 0 0 auto
     max-width: none
     margin-right: 22px
-    margin-bottom: 19px
+    margin-bottom: 9px
     font-size: 25px
   &__text
     flex-basis: 0
@@ -678,6 +682,7 @@ section
   display: flex
   flex-direction: row
   flex-wrap: wrap
+
   &--between
     justify-content: space-between
   &__col
@@ -690,6 +695,7 @@ section
   display: flex
   flex-direction: row
   align-items: center
+  margin-top: 8px
   &__icon
     margin-right: 8px
     font-size: 10px
@@ -699,7 +705,7 @@ section
 .btn
   @extend %btn-clear
   &--secondary
-    padding: 7px 62px
+    padding: 7px 62px 4px
     +font($font,18px,400,$hover)
     border-radius: 20px
     border: 2px solid $hover
@@ -732,14 +738,15 @@ section
     padding: 60px 0
     &__item
       padding: 40px 20px
+
   .ct-product
     &__descr
-      margin-bottom: 29px
+      margin-bottom: 10px
 +r(992)
   .service
-    padding: 73px 0
+    padding: 90px 0 0px
     &__item
-      padding: 40px
+      padding: 40px 40px 33px 51px
 
 +comment("page internal style")
 .internal
@@ -912,3 +919,9 @@ section
       margin-bottom: 59px
     p
       margin-bottom: 30px
+.margin--70
+  margin-bottom: 70px
+  +rx(768)
+    margin-bottom: 50px
+    +rx(550)
+      margin-bottom: 25px

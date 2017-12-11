@@ -31,6 +31,8 @@ h2.title-headng
     animation-duration: 1500ms
 .social-wrapper
   display: flex
+  +r(1200)
+    margin-right: 25px
 .social-list
   list-style: none
   margin: 0px
@@ -48,7 +50,7 @@ h2.title-headng
     &:hover
       color: lighten($hover,10%)
 .map
-  min-width: 60%
+  min-width: 61%
   min-height: 517px
   +rx(1259)
     min-width: 550px
@@ -90,6 +92,8 @@ h2.title-headng
   display: flex
   padding: 90px 0px
   overflow: hidden
+  margin: 0px auto
+  max-width: 1175px
   +rx(991)
     flex-direction: column
     padding: 60px 0px
@@ -105,7 +109,7 @@ h2.title-headng
 .contacts-item
   display: flex
   align-items: center
-  margin-bottom: 40px
+  margin-bottom: 31px
   &__logo
     margin-right: 20px
   &__first-svg
@@ -114,7 +118,7 @@ h2.title-headng
     color: #9f9f9f
   &__sec-svg
     width: 30px
-    height: 23px
+    height: 34px
     color: #9f9f9f
   &__third-svg
     width: 30px
